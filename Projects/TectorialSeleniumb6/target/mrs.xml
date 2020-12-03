@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="3.997">
+<testcase classname="Registration desk login" name="Register a patient variant 3" time="3.339">
+<system-out><![CDATA[Given user is logged in to demo.openmrs as admin............................passed
+When user creates a new patient with following data: "John", "Smith", "Male".passed
+And with extra information: 10 , "January", 1990............................passed
+And with address: "1200 N Lasalle", "Chicago", "IL", "USA", and "60613".....passed
+Then new patient has been registered with: "John", "Smith"..................passed
+And address of new patient is "1200 N Lasalle", "Chicago", "IL".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration desk login" name="Register a patient variant 3 2" time="0.124">
+<system-out><![CDATA[Given user is logged in to demo.openmrs as admin............................passed
+When user creates a new patient with following data: "Sam", "Fellon", "Male".passed
+And with extra information: 17 , "April", 1988..............................passed
+And with address: "2400 N Clark", "Chicago", "IL", "USA", and "60614".......passed
+Then new patient has been registered with: "Sam", "Fellon"..................passed
+And address of new patient is "2400 N Clark", "Chicago", "IL"...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration desk login" name="Register a patient variant 3 3" time="0.112">
+<system-out><![CDATA[Given user is logged in to demo.openmrs as admin............................passed
+When user creates a new patient with following data: "John", "Smith", "Male".passed
+And with extra information: 10 , "January", 1990............................passed
+And with address: "1200 N Lasalle", "Chicago", "IL", "USA", and "60613".....passed
+Then new patient has been registered with: "John", "Smith"..................passed
+And address of new patient is "1200 N Lasalle", "Chicago", "IL".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration desk login" name="Register a patient variant 3 4" time="0.115">
+<system-out><![CDATA[Given user is logged in to demo.openmrs as admin............................passed
+When user creates a new patient with following data: "Sam", "Fellon", "Male".passed
+And with extra information: 17 , "April", 1988..............................passed
+And with address: "2400 N Clark", "Chicago", "IL", "USA", and "60614".......passed
+Then new patient has been registered with: "Sam", "Fellon"..................passed
+And address of new patient is "2400 N Clark", "Chicago", "IL"...............passed
+]]></system-out>
+</testcase>
+</testsuite>

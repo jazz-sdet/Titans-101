@@ -1,0 +1,79 @@
+ArrayList<String> names=new ArrayList();
+
+names.add("David"); 
+
+Object[] names1=names.toArray();
+
+------------------
+Converting Array to List
+
+Arrays.asList(NameOfArray);
+
+List<String> names=Arrays.asList("David","Melissa","John");
+
+=======================
+Instance and Static Block
+
+{} --> instance block
+static {} --> static block
+
+Order of Initialization
+1- Static block (before everything in class and only one time it will be executed)
+2- Instance block(before every object in class)
+3- Constructor (It will be executed with every object in class)
+==================================
+Sorting ArrayList 
+Collections.sort(nameOfArrayList); 
+
+Sorting Array
+Arrays.sort(nameOfArray);
+
+==================================
+String num="123"; 
+
+Integer number=Integer.valueOf(num); --> 
+------------------
+String num="123"; 
+
+byte by=Byte.parseByte(num); 
+
+=================================
+AutoBoxing: Converting primitive data type to wrapper class object is autoboxing
+
+UnBoxing: Converting wrapper object to primitive data type is called unboxing. 
+
+================================
+run(int )
+run(String)
+run(String name,int age)
+run(int, String)
+run(String fullName,int distance)
+==================================
+
+Understanding Equality 
+
+difference between == sign and .equals() method
+String Class And Wrapper Class
+== sign --> will compare both objects reference are pointing to same location in memory or not
+.equals() --> will compare both objects has same value or not
+
+Other Object 
+== sign --> will compare both objects reference are pointing to same location in memory or not
+
+.equals() --> will compare both objects reference are pointing to same location in memory or not. Bc the equals method will come from the Object class, if the equals method is coming from object class it will compare both reference are pointing same object or not. 
+
+
+ACCESS MODIFIER
+1- public--> we can access the variables and method everywhere inside the same project. Access modifier will come before return type in methods. It will come before the data type for variables.
+2- private --> We can access private variables or method only inside same class
+3- protected --> We can access protected variables and methods inside the same package and outside of the package in subclasses only.
+4- default(package protected) --> Default variables or methods are accessible only inside the same package. 
+
+
+Encapsulation
+Creating private variables and modifing access to your instance variables. 
+// Getters --> has a return type and returns the instance variables
+// Setters --> has no return type it will be void return and it takes one parameter then give the value for your instance variable. 
+
+Immutable Classes
+The user of the class can see the variables using getters but they can not use the setter. BC immutable classes has no setters. 

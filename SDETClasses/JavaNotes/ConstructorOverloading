@@ -1,0 +1,87 @@
+Constructor Overloading
+this keyword
+Static keyword
+Pass by value/pass by reference
+ArrayList
+
+Garbage Collection: If the object has no reference, this object will be garbage collected. We can use System.gc() to call the garbage collection in java. This object will be deleted fromt he memory. 
+
+Constructor Overloading: 
+We can change the number of parameter to be able to overload the constructor. 
+
+Calling Constructor inside another constructor.
+We can call the constructor using this keyword. Also we need to provide the parameter for this constructor as well that's we need to use the paranthesis. 
+this("cat", "gray","0.0","0.0",1); 
+* this keyword must be first statement inside the constructor. 
+* you can not call two constructor inside each other. It will give compile time error.
+* We can not use this() two times inside the constructor.
+
+
+TASK: 
+Create one Audience class with following instance variables: 
+name, age, city, seat number(1 - 50), section (A,B,C,D)
+
+Create 5 argument constructor to initialize instance variables
+Create 3 argument constructor to initialize the name, age and city then give the default value for seat number 50 and section D
+Create 1 argument constructor to initialize the name then give the default value for age 0, and city Chicago. 
+
+Create one method to print all the information of the object. 
+
+Create three different object inside the main method and call the printInfo method for each object. 
+
+
+STATIC: 
+1- We can use static keyword for variables and methods
+2- Once we use the static for variables or methods, now they will be belongs to the class. 
+Until now variables and methods was belongs to the your object. That's why outside of the class, we can not call the method without creating an object. 
+3- Static variables will be shared by all object. 
+4- We can call static method without creating an object using class name. (Static keyword in method must come before return type)
+
+public static void getNumber(){}
+
+static public void getNumber(){}
+ NOTE: Inside the static method, we can not call non static variables or methods. To be able to call the methods inside the static method we can create the object and call them. 
+ Inside the non static method, we can call static or non static variables or methods. 
+
+
+Static variables: Static variables are shared by all object. They are belongs to the class. 
+
+Pass By Value: Java works with pass by value. In parameter once we pass the our variable java will get the copy of original value and it will change your original value. 
+Pass By Reference: It will get your original value and modify your original reference. After method implementation your original value also will change. In java array sort method works with pass by reference. 
+
+int num=10;
+
+int result=multiply(num); 
+
+sout(num); //10
+sout(result); 30
+
+====================================================
+Static variables/methods
+1- If the variable is static every object is using same variables. 
+2- We can use static keyword for variables and methods
+3- If the variables or methods are static, we can call them without creating and object using class name.
+
+Static Methods: 
+We can not call non static variables and methods inside static methods. 
+ (If you are using instance variables inside the method, do not create static method)
+Instance Methods: 
+We can call static or non static variables and methods inside instance method. 
+
+Constructor Overloading (this(), this)
+this()--> we use it to call the constructor inside another constructor in the same class. It should be on the first line of the constructor. 
+
+this --> we use it to call our instance variables in the same class. 
+
+Garbage Collection
+* If the object has no reference that pointing anymore, this object will be garbage collected. System.gc();
+--> If the object is garbage collected, System.gc() will call the finalize method. To be able to see the proper message for finalize method, we need to override the finalize method. 
+
+Pass By Value/Reference
+
+
+=======================================
+Wrapper Classes
+Autoboxing: If you are converting primitive data type to Wrapper class.it is called autoboxing in java.
+
+Unboxing:Converting wrapper class to primitive data type is called unboxing in java. 

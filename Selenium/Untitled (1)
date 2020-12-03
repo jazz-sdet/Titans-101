@@ -1,0 +1,84 @@
+Select
+Select tag
+
+Select select=new Select(element); 
+1- SelectByValue
+2- selectByVisibleText
+3- selectByIndex
+
+NOTE: We can select more than one value from drop down box if we have 'multiple' attribute on select tag. 
+DeSelecting the Values from Drop Down box
+1- deselectByValue
+2- deselectByVisibleText
+3- deselectByIndex
+4- deselectByAll 
+
+--------------------------------------
+TASK: 
+Navigate to the Google and search the selenium then validate all result has selenium keyword
+
+
+SELENIUM
+
+Selenium HQ
+Selenium Web
+Test 
+Selenium Driver
+Validate
+Selenium test
+
+
+//input[starts-with(.='Selenium ')]
+
+ACTIONS CLASS
+We use actions class in selenium to perform the mouse and keyboard actions. 
+
+- doubleClick 
+- right click 
+- drag and drop 
+- move to element
+
+
+WebDriver driver=new ChromeDriver(); 
+
+Actions actions=new Actions(driver); 
+
+We need to use the perform() method after using any mouse and keyboard action on the page.
+
+Actions class method 
+
+contextClick() --> it performs the right click action on the current location of the mouse. 
+
+contextClick(WebElement) --> performs the right click action in the middle of given webelement.
+
+moveToElement(WebElement) --> it will move your mouse in the middle of given webelement
+
+doubleClick(); --> it will perform double click action on the current location of the mouse
+ 
+doubleClick(WebElement); --> it will perform double click action in the middle of given web element. 
+
+// TASK: Navigate to the page and find all click and doubleclick buttons on the page
+
+clickAndHold() --> it will click and hold the mouse left button 
+
+release() --> it will release the clicked element 
+
+dragAndDrop(source, target) --> this method drag and drop the element from source to target location. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

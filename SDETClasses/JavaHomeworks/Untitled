@@ -1,0 +1,154 @@
+Primitive Data Types
+Integtral Number:
+byte , short, int, long
+
+Decimal Number: 
+float, double
+
+char-> single character only 'A'
+
+boolean -> true or false
+
+========================
+
+Arithmatic Operators In Java
+-, +, *, /, %
+
+7%5 ---> 2
+
+13 % 6 ---> 6+6+1
+
+23%20 --> 3
+
+18%29 --> 18
+
+========================
+
+TASK: 
+Given 4 digit any positive number
+When the user get all the digits from the number
+Then the user find sum of all digits
+
+5687
+
+7
+8
+6
+5
+   // Finding remainder of the number with 10 will give last digits every time.
+        // 5687%10= 7
+        // 5687/10= 568%10
+
+        int number=2345;
+        int firstNumber=number%10;
+        number=number/10; // --> 568
+        int secondNumber=number%10;
+        number=number/10;
+        int thirdNumber=number%10;
+        number=number/10;
+        int forthNumber=number%10;
+        System.out.println("First Number is "+firstNumber);
+        System.out.println("Second Number is "+secondNumber);
+        System.out.println("Third Number is "+thirdNumber);
+        System.out.println("Forth Number is "+forthNumber);
+
+        int sumOfDigits=firstNumber+secondNumber+thirdNumber+forthNumber;
+        int multipleDigit=firstNumber*secondNumber*thirdNumber*forthNumber;
+        System.out.println("Sum of digits "+sumOfDigits);
+        System.out.println("Multiplication of digits "+multipleDigit);
+
+=====================================================================================
+
+Precendence Of Arithmatic Operators
+
+1- *,/ and % will be executed before + and - 
+2- If you have same level of precendence more than one times, they will be evaluated left to right
+3- If you want to change the precendence of aritmatic operators, you need to use the parantheses. In this case it will be executed before every arithmatic operators
+
+int number=18+0-3; 15
+
+
+18+0-3=15
+
+--------------
+3+5-10*2-4/4-7%10  
+
+
+----------------
+
+6%2-3+7*2/2*8-3/3
+
+0-3+56-1
+
+52
+
+------------------
+
+0-5-1
+
+-6
+
+========================================================
+
+int ticket=50; +20
+
+ticket=ticket+20; // 70 
+
+ticket+=20; -->ticket=ticket+20; 
+
+
+sout(ticket); 90
+
+========================================================
+Numeric Promotions
+1- Once we use two different data type with arithmatic operator, the result automatically promoted to the largest data type between these two values. 
+byte, short, int, long
+2- If one of the data type is decimal number, the result automatically promoted to the decimal number. 
+long + float= float and double
+3- If the data type is smaller than int like byte or short, the result will be promoted to the int. 
+
+byte->8bit
+short->16bit
+int->32bit
+long->64bit
+float->32bit
+double-> 64bit
+
+byte+int=
+byte+short=int
+short+short=int
+byte+byte=int
+
+float+float=float
+int + float=float
+int + double= double
+float+double= double
+byte+long=long
+short+int=int
+
+byte appleNum1=5; 
+
+int appleNum2=10; 
+
+byte sum=apppleNum1+appleNum2; --> compile time error
+
+int sum=apppleNum1+appleNum2; 
+================================================
+Casting the Values
+1- We need to explicitly cast the value from largest data type to smaller data type 
+or 
+2- Decimal numbers to integral numbers 
+
+Example: 
+int num=50; 
+byte test=(byte)num; --> we need to cast the data explicitly cast
+
+
+short num1=40; 
+int num2=num1;  --> java will cast the value (num1) to int data type automatically. We don't need to write anything. 
+
+
+
+
+
+

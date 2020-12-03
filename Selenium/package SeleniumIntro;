@@ -1,0 +1,192 @@
+package SeleniumIntro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locators {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        WebDriver driver=new ChromeDriver();
+
+        driver.get("file:///Users/zhazgulkalimalieva/Desktop/HTML/Techtorial.html");
+
+        WebElement addressOne=driver.findElement(By.name("address1"));
+        addressOne.sendKeys("620 W Addison St");
+
+        WebElement addressTwo=driver.findElement(By.name("address2"));
+        addressTwo.sendKeys("Apt #104");
+
+        WebElement cityInput=driver.findElement(By.name("city"));
+        cityInput.sendKeys("Lakeview");
+
+        WebElement stateInput=driver.findElement(By.name("state"));
+        stateInput.sendKeys("Illinois");
+
+        WebElement zipCodeInput=driver.findElement(By.name("postalCode"));
+        zipCodeInput.sendKeys("60613");
+
+        WebElement country=driver.findElement(By.name("country"));
+        country.sendKeys("Argentina");
+
+        WebElement header=driver.findElement(By.tagName("h1"));
+        //header.sendKeys("test");
+        System.out.println(header.getText());
+
+        WebElement bTag=driver.findElement(By.tagName("b"));
+        //FindElement returns single web element. If we have more than one matching Locator value in html
+        //findElement returns only first matching element
+        System.out.println(bTag.getText());
+
+        WebElement seleniumButton=driver.findElement(By.linkText("Selenium"));
+        //i have only one matching a tag on the html which Selenium has, thats why it is unique element
+        seleniumButton.click();
+        driver.navigate().back();
+
+        WebElement  testNG=driver.findElement(By.linkText("TestNG"));
+        testNG.click();
+        driver.navigate().back();
+
+        WebElement apiButton=driver.findElement(By.partialLinkText("Rest"));
+        apiButton.click();
+        driver.navigate().back();
+//////////////////////////////////////////////////////////////
+        addressOne=driver.findElement(By.name("address1"));
+        addressTwo=driver.findElement(By.name("address2"));
+        cityInput=driver.findElement(By.name("city"));
+        stateInput=driver.findElement(By.name("state"));
+        addressOne.clear();
+        addressTwo.clear();
+        cityInput.clear();
+        stateInput.clear();
+        zipCodeInput.clear();
+
+        WebElement cucumber=driver.findElement(By.linkText("Cucumber"));
+        //submitButton.submit();
+
+        WebElement submitButton=driver.findElement(By.id("submitbutton"));
+        submitButton.click();
+
+
+
+
+
+
+
+    }
+}
+=======================================================================================================
+package SeleniumIntro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumMethod2 {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("http://www.testdiary.com/training/selenium/selenium-test-page/");
+
+        WebElement saveButton=driver.findElement(By.id("demo"));
+        System.out.println(saveButton.isEnabled());
+
+        WebElement javaRadio=driver.findElement(By.id("java1"));
+        System.out.println(javaRadio.isEnabled());
+        System.out.println("Chceck box selected");
+
+        WebElement seleniumCheckBox=driver.findElement(By.id("seleniumbox"));
+        System.out.println(seleniumCheckBox.isSelected());
+
+        seleniumCheckBox.click();
+
+        System.out.println(seleniumCheckBox.isSelected());
+
+        WebElement restApiCheckBox=driver.findElement(By.id("restapibox"));
+        System.out.println(restApiCheckBox.isSelected());
+    }
+}
+
+
+=======================================================================================================
+
+
+package SeleniumIntro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumMethods {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        WebDriver driver=new ChromeDriver();
+
+        driver.get("file:///Users/zhazgulkalimalieva/Desktop/HTML/Techtorial.html");
+
+        WebElement submitButton=driver.findElement(By.id("submitbutton"));
+        System.out.println(submitButton.getText());
+        System.out.println(submitButton.getAttribute("value"));
+        System.out.println(submitButton.getAttribute("type"));
+
+        WebElement javaButton=driver.findElement(By.linkText("Java"));
+        System.out.println(javaButton.getAttribute("href"));
+        javaButton.click();
+        WebElement nextPage=driver.findElement(By.tagName("button"));
+        System.out.println(nextPage.getText());
+
+        WebElement seleniumButton=driver.findElement(By.linkText("Selenium"));
+        seleniumButton.click();
+
+        WebElement cucumberButton=driver.findElement(By.linkText("Cucumber"));
+        cucumberButton.click();
+
+       // driver.close(); //closes tabs which the main driver is pointing
+        driver.quit(); // it will close all the tabs which has opened using driver
+
+
+    }
+}
+=======================================================================================================
+
+package SeleniumIntro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTech {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("file:///Users/zhazgulkalimalieva/Desktop/HTML/Techtorial.html");
+
+        WebElement header=driver.findElement(By.id("techtorial1"));
+        //get text, click element, is displayed, is selected, send key
+        //getText()--returns text returns String
+        System.out.println(header.getText());
+
+        //SendKeys() method will send the given String to the input box
+        WebElement firstNameInput=driver.findElement(By.id("frstName"));
+        firstNameInput.sendKeys("Sam");
+
+        WebElement lastNameInput=driver.findElement(By.id("lastName"));
+        lastNameInput.sendKeys("Smith");
+
+        WebElement phoneNumInput=driver.findElement(By.id("phoneNum"));
+        phoneNumInput.sendKeys("8728064747");
+
+        WebElement userNameInput=driver.findElement(By.id("userName"));
+        userNameInput.sendKeys("jnfe@gmail.com");
+
+        //address1
+
+    }
+}
+
+

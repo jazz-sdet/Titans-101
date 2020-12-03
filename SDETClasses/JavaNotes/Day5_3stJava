@@ -1,0 +1,100 @@
+pwd--> print word directory
+ls--> list all files and folders under current directory
+cd DirectoryName --> navigate the provided directory
+cd .. --> It will go to the previous directory
+mv --> moves the file inside provided folder location. mv fileName folderPath
+To be able to Save the file
+MAC: command+s
+WINDOWS: control+s
+TASK:
+Create one sublime file under the desktop
+Create new folder named TestCommand inside the Document folder
+Move file from desktop to TestCommand folder
+mv fullPathOfFileLocation fullPathOfFolderLocation
+mv /Users/muammer/Desktop/SatClassNotes /Users/muammer/Document/TestCommand
+========================================
+File Extension
+.java
+=======================================
+Some Short Cuts
+Saving file 
+Mac- command+s
+Windows- control+s
+Copy Text
+Mac- command+c
+Windows- control+c
+Paste Text
+Mac- command+v
+Windows- control+v
+Openning new Sublime File
+Mac- command+n
+Windows- control+n
+Navigation between the applications
+Mac- command+tab
+Windows- alt+tab
+for curly braces {} --> shift+curlybrace button
+for square bracets [] --> it is next to the P
+JAVA CLASS
+1- Once you save the java class your extension of file must be .java 
+2- 
+public class Hello{ 
+public static void main(String [] args){    
+    System.out.println("Hello World!");
+}
+}
+* class--> it show that we are creating the class. For class we need to use the class keyword. 
+* Hello--> Hello is the class name. 
+* public--> public is access modifier. 
+* static--> is the keyword make variables or methods belongs to the class. 
+* main--> is the method name. We use main method in java to run the java code. 
+* String--> it is an object. We use string to store the letters. 
+*[] --> it is symbol for array in java. 
+*System.out.println()--> to be able to print the text in java, we use System.out.println.
+*{}--> when we need to write block of code, we need to use the {} to execute them. 
+NOTE: Once you update your code, you need to save it and compile one more time. 
+* Java is case sensetive. Upper cases and lower cases are important while you are writing code. 
+* When you open the curly braces, you need to close it in java. Otherwise, you will get compile time error. 
+Compile Time Error
+Compile time error occurs when we compile the code. Compiling code means we convert our source code to byte code. It happens most of the time because of the syntax issue in the code like uppercase, lowercase, and missing curly braces etc. 
+Source code the code the developer can understand. Once we compile the source code we get the byte code. 
+javac Hello.java
+Once we compile the source code we get new file which is Hello.class. Inside .class extension I have byte code. Java vertial machine read the byte code. JVM converts your code line by line to the binary then the computer can understand. 
+Hello.java(SourceCode) --> Hello.class(ByteCode)--> Binary Code
+Task: 
+Write the more than one println to print all your family member names. 
+Single Line Comments In Java
+To be able to give the comments in java we need to use double slash (//). Comment will not executed while running the code. They give description. 
+Multi Line Comments in Java
+/*
+This is example of multi line comment
+Today is Saturday
+The data is 08/01/2020
+*/
+Class Name in Java
+1- Class name should be upper case. 
+2- Class name should not start with number and end with number
+3- Do not use any other symbol for class name
+4- Once you save the class, file name should be same name with class name. Otherwise you will get compile time error. 
+public class Car{ }
+Car.java
+5- If you have two words in your class, you need to use the camel cases for class name. Every new word starts with upper case
+public class TechtorialAcademy{}
+6- If you have two words in your class name, do not use any space. 
+public class Techtorial Academy{} --> do not use space in the class name. 
+Variables
+1- Variable is the memory where we can store the data. 
+2- To be able to store the variables, we need to give our data type. 
+3- We need to give the name for variable.
+4- We need to give the value for variable. 
+Name of the Variable: 
+1- Variable name should starts with lower case
+2- If you have more than one word we follow the camel case rule. 
+3- The name can not start with number. Starting with number will give the compile time error. However, you can end the variable name with number.
+1apple --> compile time error
+apple1 --> works perfectly. 
+4- We can use _ and $ everywhere in the variable name. However, we can not use any other symbol for variable name, it will give compile time error. 
+    int sum_Of_Apple; --> correct
+    int _sum$Of$App$le_; --> correct
+5- You can not use same variable name more than one time inside same class. It will give compile time error. 
+6- We can not use space in variable names; 
+7- We can not use java reserved keywords for variable names. (public, static, void, class, String, int)

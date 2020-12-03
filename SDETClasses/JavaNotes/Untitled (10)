@@ -1,0 +1,267 @@
+Object
+Constructors
+Methods
+Collections
+	ArrayList
+	Set
+	Map
+OOP Concepts
+	Inheritance
+	Abstraction
+	Polymorphism
+	Encapsulation
+Exceptions
+
+-----------
+
+Procedural Oriented Programming languages -> POP -> C language
+
+OOP -> Object Oriented Programming language
+Java, Python, JavaScript, C++...
+
+public class Object {
+	
+}
+
+Method Overridding:
+-> We use @Override annotation in order to make sure we override the method
+-> Method signature has to be same -> eat(String name){implementation} -> eat(String name){implementation}
+-> Once we call the method it will execute the last overriden method
+
+
+
+By default each class:
+1. Extends Object class
+2. Having no argument constructor
+3. Constructor calling super class's no argument constructor with 'super()'
+
+
+super(); -> will call super class's constructor
+this();  -> will call same class's constructor
+
+Constructor rules:
+-> Sub class constructor will call no-argument constructor of super class by default -> 'super();'
+-> But if it doesn't have no-argument constructor in super class, we will need explicitly call any argument constructor from super class
+-> Once we use 'super()' it has to be first statement.
+
+
+super    -> calls variables and methods of super class
+super(); -> calls constructor of super class
+
+this     -> calls variables and method of same class
+this();  -> calls constructor of same class
+
+-------------------------------
+
+Abstraction
+-------------
+
+	Abstract Class -> Partially abstraction
+	Interface -> Full abstraction
+
+Abstract Class
+
+	Where we have method names but not implementation of method.
+
+	public void eat(){
+	 	// implementation/body
+	}
+
+
+	public abstract void fly();
+
+
+--------
+
+Benefits of Inheritance:
+
+1. It will make your code faster
+2. Code is written once and you can use it all the time
+3. Reduces software complexity
+...
+
+
+Method Overidding:
+-> We use @Override annotation in order to make sure we override the method
+-> Method signature has to be same -> eat(String name){implementation} -> eat(String name){implementation}
+-> Once we call the method it will execute the last overriden method
+-> Access modifier has to be same or more accessible
+-> Return type has to be same or COVARIANT
+-> Private or final methods can not be overriden
+
+
+protected Object methodName(String name){
+	// implementation
+}
+
+@Override
+public String methodName(String name){
+	// implementation
+}
+
+
+
+Can you override static method?
+	* NO, static methods will not be overriden, but it will be hidden. (Static methods belongs to class)
+	* Same for variables -> variables are not getting overriden but it is getting hidden.
+
+
+Access Modifiers:
+public    -> Can be accessed from everywhere
+protected -> Can be accessed from same package, and from sub-class in different package.
+default   -> Can be accessed from same package
+private   -> Can be accessed within the same class
+
+
+final keywords:
+	final variable -> It has to be initialized and can not be changed. (CONSTANT variable). declared with upper case
+	final method   -> can not be overriden
+	final class    -> can not be inherited
+
+Immutable -> String	is final class
+			 Variables has to be declared as final (CONSTANT)
+			 Setters method are not declared
+
+
+------------------
+
+INTERFACE:
+----------
+
+Full abstraction
+Allows multiple inheritance
+
+Bird -> Flyable, Noise -> Adjective
+
+Bird IS An Animal
+
+Flyable IS An Object
+
+iFly
+
+
+
+
+Abstract Class vs Interface:
+-----------------------------
+1. Only one abstract class can be inherited while multiple interfaces (Abstract Data Type) can be inherited
+2. Abstract class is partially abstraction, interface is full abstraction
+3. Both of them may not be marked 'final'
+4. Both can not be instantiated(create an Object)
+5. All interface variables are constant (public static final), while in abstract class we can have regular variables
+6. While interface is inherited by a class we use 'implements' while in for abstract class we use 'extends'. And if 	one interface inherits another interface we use keyword 'extends'.
+7. In interface methods are 'public abstract' by default, while in abstract class we need to declare abstract methods with 'abstract' keyword.
+
+Interface Methods:
+------------------
+1. Non-default method -> which 'public abstract' by default.
+2. Default method     -> we use 'default' keywod for the method and it will be regular public method.
+3. Static method      -> we use 'static' keyword and it will be regular static method
+
+
+** Concrete class -> first regular class that inherits Abstract class or Interface
+
+A bigram is any two adjacent words in the text disregarding case and punctuation. A histogram is the count of how many times that particular bigram occurred in the text. Write the method will take String and it will return the map with count of particular bigram occurred in the text.
+Example:
+ Given the text:
+ “The quick brown fox and the quick blue hare.” The bigrams with their counts would be. Output:
+ “the quick” 2
+ “quick brown” 1
+ “brown fox” 1
+ “fox and” 1
+ “and the” 1
+ “quick blue” 1
+ “blue hare” 1
+
+
+1. String sentence = “The quick brown fox and the quick blue hare.”;
+  Remove all punctuation
+2. Make it lower case
+
+3. “the quick brown fox and the quick blue hare”
+
+4. Store all bigrams into the list ("the quick", "quick brown", "brown fox"...)
+
+5. Create a map where you will be storing bigram as key and value as count
+
+6. Using nested for loop count each value from this list and store it to map.
+
+7. return the map
+
+-----------------
+
+POLYMORPHISM:
+--------------
+
+1. Code reusability
+2. Code readable
+3. Performance
+
+Polymorphism -> Many forms
+	Poly   -> Many
+	Morphs -> forms
+
+Forms (References)    |    Objects
+
+Object p              =    new Iphone();
+
+
+Object
+Animal
+	DomesticAnimal
+		Cat
+	WildAnimal
+		Tiger
+
+
+
+Animal cat = new DomesticAnimal();
+
+
+
+Animal dog = new Dog();
+
+Polymorphism -> is an ability of an object to take many references (forms).
+
+And reference type will decide which methods and variables to call
+
+Down Casting -> If you want to get variable or method from Object side class 
+	((Dog)dog).sleep();
+
+Up Casting   -> is redundant (not needed), because it is done implicitely (automatically).
+
+Casting to unrelated types -> It will compile but It will throw classCastException.
+
+
+Two types of Polymorphism:
+	Dynamic Polymorphism -> It will be decided which method to execute at runtime
+	Static Polymorphism  -> It will be decided which method to execute at compile time
+
+
+-------------
+
+
+OOP Concepts
+	1. To reuse the code
+	2. Make it readable
+	3. Reduce software complexity
+
+-> Inheritance 
+-> Abstraction
+	Abstract Class
+	Interface
+-> Polymorphism -> Many forms
+	Dynamic Polymorphism -> Method Overridding -> method will be decided at runtime
+	Static Polymorphism  -> Method Overloading -> method will be decided at compile time
+	Down Casting
+	Up Casting
+	ClassCastException
+-> Encapsulation -> having private variables and giving them an access through getters and setters
+	Let the code not easily being changed or understand which varible is being
+
+	Dog dog = new Dog();
+	dog.name="Dog";
+	dog.setName("Dog");
+
+Exceptions
+

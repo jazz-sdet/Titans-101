@@ -1,0 +1,112 @@
+package classes;
+import java.util.Scanner;
+public class BankTest {
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("Welcome!");
+
+        // inside the static method we can not call non static variables or methods
+// fname, lname, account number, bank name, username, password, balance
+
+        BankTest test=new BankTest();
+        test.printAllOptions();
+        System.out.println("Please click one of options");
+        int option=input.nextInt();
+        Bank newAccount=null;
+        
+        while(option!=8) {
+            switch (option) {
+                case 0:
+                    System.out.println("First name: ");
+                    String firstName = input.next();
+                    System.out.println("Last name: ");
+                    String lastName = input.next();
+                    System.out.println("Account Number: ");
+                    String accountNumber = input.next();
+                    System.out.println("Bank Name: ");
+                    String bankName = input.next();
+                    System.out.println("Username: ");
+                    String username = input.next();
+                    System.out.println("Password: ");
+                    String password = input.next();
+                    System.out.println("Balance: ");
+                    int balance = input.nextInt();
+                    newAccount = Bank.signUp(firstName, lastName, accountNumber, bankName, username, password, balance);
+                    break;
+                case 1:
+                    if (newAccount == null) {
+                        System.out.println("Please first sign up to be able to login.");
+                    } else {
+                        System.out.println("Please provide your username: ");
+                        String uname = input.next();
+                        System.out.println("Please provide your password: ");
+                        String pword = input.next();
+                        newAccount.login(uname, pword);
+                    }
+                    break;
+                case 2:
+                    if(newAccount!=null && newAccount.islogin) {
+                        newAccount.getAccountInfo();
+                    }else{
+                        System.out.println("Please first login to your account or sign up. ");
+                    }
+                    break;
+                case 3:
+                    if(newAccount!=null && newAccount.islogin){
+                        System.out.println("Please enter your deposit amount: ");
+                        int depositAmount=input.nextInt();
+                        newAccount.deposit(depositAmount);
+                    }else {
+                        System.out.println("Please first login to your account or sign up. ");
+                    }
+                    break;
+                case 4:
+                    if(newAccount!=null && newAccount.islogin){
+                        System.out.println("Please enter your withdraw amount: ");
+                        int withdrawAmount=input.nextInt();
+                        newAccount.withdraw(withdrawAmount);
+                    }else{
+                        System.out.println("Please first login to your account or sign up");
+                    }
+                    break;
+                case 5:
+                    if(newAccount!=null && newAccount.islogin){
+                        System.out.println("Please enter your new username");
+                        String newUsername=input.next();
+                        newAccount.setUsername(newUsername);
+                    }else{
+                        System.out.println("Please first login to your account or sign up");
+                    }
+                    break;
+                case 6:
+                    if(newAccount!=null && newAccount.islogin){
+                        System.out.println("Please enter your new password ");
+                        String newPassword=input.next();
+                        newAccount.setPassword(newPassword);
+                    }else{
+                        System.out.println("Please first login to your account or sign up");
+                    }
+                    break;
+                case 7:
+                    test.printAllOptions();
+                    break;
+                // Implement case 5,6,7 set new username and set new password
+            }
+            System.out.println("Plese select one of available function. To see all functions click 7");
+            option=input.nextInt();
+        }
+        System.out.println("Have a great day!");
+    }
+    public void printAllOptions(){
+        System.out.println("0 - Create an account");
+        System.out.println("1- Login");
+        System.out.println("2- Print all information");
+        System.out.println("3- Deposit");
+        System.out.println("4- Withdraw");
+        System.out.println("5- Update the Username");
+        System.out.println("6- Update the Password");
+        System.out.println("7- See all options");
+        System.out.println("8- Exit");
+    }
+}

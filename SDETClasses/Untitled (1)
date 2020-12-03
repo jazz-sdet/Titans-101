@@ -1,0 +1,215 @@
+  /*
+     * Input: [1,2,3,4,5,6,7] and k = 3
+     *Output: [5,6,7,1,2,3,4]
+     */
+
+    public static int[] rotArr(int[] arr, int k) {
+
+        int [] res= new int[arr.length];
+
+        if(arr.length>k) {
+            int len1=arr.length-k;
+            for(int i=0;i<k;i++,len1++) {
+                res[i]=arr[len1];
+            }
+            int y=k;
+            for(int i=0;i<arr.length-k;i++,y++) {
+                res[y]=arr[i];
+            }
+            return res;
+        }
+        return null;
+    }
+
+    public static boolean[] arrayPrime(int[] num) {
+
+        boolean [] arrPrm= new boolean[num.length];
+        OUTHERLOOP:
+        for(int i=0; i<num.length;i++) {
+            INNERLOOP:
+            for(int a=2; a<num[i];a++ ) {
+                if(num[i]%a==0) {
+                    arrPrm[i]=false;
+                    continue OUTHERLOOP;
+                }else {
+                    arrPrm[i]=true;
+                }
+            }
+        }
+
+        return arrPrm;
+    }
+    public static int way1(int num) {
+
+        StringBuilder str = new StringBuilder(String.valueOf(num));
+        str.reverse();
+        int res=Integer.parseInt(str.toString());
+        return res;
+    }
+
+    public static int way2(int num) {
+
+        int digit=0;
+        int rev=0;
+        int num2=num;
+
+        while(num!=0) {
+
+            rev*=10;
+            rev+=num%10;
+            num=num/10;
+        }
+
+        return rev;
+    }
+
+    public static void fibonnacci() {
+
+        int firstNum=0;
+        int secondNum=1;
+        int count=0;
+
+        System.out.println(firstNum);
+        System.out.println(secondNum);
+        for(int i =0 ; i<100 ; ) {
+
+            i= firstNum+secondNum;// 0+1=1
+            firstNum=secondNum;
+            secondNum=i;
+            if(i<100) {
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.println("There are "+count+" Fibonacci number before 100");
+    }
+
+    public static boolean perfectNumber(int number) {
+
+        boolean result=false;
+        int sum=0;
+        for(int i=1; i<=number/2; i++) {
+            if(number%i==0) {
+                sum+=i;
+            }
+        }
+        if(sum==number) {
+            result=true;
+            System.out.println(number+" is perfect number");
+            return result;
+        }
+        System.out.println(number+" is not perfect number");
+        return result;
+
+    }
+
+    public static boolean primeNumber(int num) {
+
+        if(num<2) {
+            return false;
+        }
+        boolean result=true;
+        // num=13
+        //  until end               until half of num(Useful)
+        // 2,3,4,5,6,7,8,9,10,11,12 or 2,3,4,5,6
+        for(int i=2; i<=num/2;i++) {
+            if(num%i==0) {
+                result=false;
+                break;
+            }
+        }
+        return result;
+    }
+
+    public static int productNumber(int num) {
+
+        int sum=0;
+        int mult=1;
+        int counter=0;
+        while(num!=0) {
+            counter=num%10;
+            sum+=counter;
+            mult*=counter;
+            num/=10;
+        }
+        int result=mult-sum;
+        return result;
+
+    }
+
+    public static int[] sumOfArray(){
+
+        int[] arr= {3456,2435,765,6776};
+
+        int[] arr2=new int[arr.length];
+
+        for(int i=0; i<arr.length; i++) {
+            int sum=0;
+            for(;arr[i]!=0;) {
+                sum+=arr[i]%10;
+                arr[i]=arr[i]/10;
+            }
+            arr2[i]=sum;
+        }
+
+        return arr2;
+    }
+
+    public static Boolean polindrome(String str){
+
+        Boolean result = false;
+        String string = "";
+        StringBuilder stb = new StringBuilder(str);
+        stb.reverse();
+        string = stb.toString();
+
+        if(string.equalsIgnoreCase(str)){
+            result = true;
+        }
+        return result;
+    }
+
+    public static void reverseArray() {
+
+        String [] arr= {"Anthony","David","Naveen","Kumar"};
+
+        String [] rewarr=new String[arr.length];
+        for(int i=0; i<arr.length; i++) {
+            String reversed="";
+            int leng=arr[i].length()-1;
+            for(; 0<=leng;leng--) {
+                reversed+=arr[i].charAt(leng);
+            }
+            rewarr[i]=reversed;
+        }
+        System.out.println(Arrays.toString(rewarr));
+    }
+
+    public static int[] sortWithoutSort(int[] nums) {
+
+        for(int i=0; i<nums.length; i++) {
+            for(int k=i+1; k<nums.length; k++) {
+                if(nums[i]<nums[k]) {
+                    int temp=nums[i];
+                    nums[i]=nums[k];
+                    nums[k]=temp;
+                }
+            }
+        }
+        return nums;
+    }
+
+    public static void countLetter(String str){
+
+        Map<Character,Integer> map = new LinkedHashMap<>();
+
+        for(int i=0; i<str.length(); i++){
+            if(map.containsKey(str.charAt(i))){
+                int num = map.get(str.charAt(i));
+                map.replace(str.charAt(i),++num);
+            }else {
+                map.put(str.charAt(i),1);
+            }
+        }
+        System.out.println(map);
+    }

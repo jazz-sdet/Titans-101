@@ -1,0 +1,24 @@
+
+Using Random get one random number between 0 to 100
+Then Ask user to guess the number
+If the user input is more than random number print 
+"It is larger than the random value"
+Otherwise print: 
+"It is less than the random value"
+Keep continue to ask the user until the input is equals to random number
+68---> Do not print in the beginning
+Random Number is generated. 
+Please enter your guess: 
+60
+"It is less than the random value"
+Please enter your guess: 
+80
+"It is larger than the random value"
+Please enter your guess: 
+65
+"It is less than the random value"
+Please enter your guess: 
+68
+You find the random number!
+
+so the last sum/divisor of perfect number has to give the perfect number as well when we add(+)? f.ex: 28 last divisible number is 14, when we add 14+14 is also 28.

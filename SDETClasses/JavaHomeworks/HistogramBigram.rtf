@@ -1,0 +1,82 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red22\green21\blue22;\red22\green21\blue22;}
+{\*\expandedcolortbl;;\cssrgb\c11373\c10980\c11373;\cssrgb\c11373\c10980\c11373\c3922;}
+\margl1440\margr1440\vieww25440\viewh15560\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+package Collections;\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 import java.lang.reflect.Array;\cb1 \
+\cb3 import java.util.ArrayList;\cb1 \
+\cb3 import java.util.LinkedHashMap;\cb1 \
+\cb3 import java.util.LinkedList;\cb1 \
+\cb3 import java.util.Map;\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 public class task6 \{\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3     public void returnHistogram(String ourText)\{\cb1 \
+\cb3         String [] arr= ourText.split(" ");//first we need to get an array from that string\cb1 \
+\cb3         LinkedHashMap<String,Integer> ourMap = new LinkedHashMap<>();//here we are creating our map\cb1 \
+\cb3         ArrayList <String> weNeedThisList= new ArrayList<>();//we need this list to\cb1 \
+\cb3         //create a proper list with " " spaces between elements and\cb1 \
+\cb3         //using list will be easier to perform further algorithms\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3         for(int i =0; i< arr.length-1; i++)\{\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3             String pairs= arr[i].concat(" ").concat(arr[i+1]);\cb1 \
+\cb3             weNeedThisList.add(pairs);\cb1 \
+\cb3         \}\cb1 \
+\cb3         System.out.println(weNeedThisList);//now we have a nice list\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3         for(String ss: weNeedThisList) \{//next we are checking\cb1 \
+\cb3             //if adding elements keys in our Map are duplicated\cb1 \
+\cb3             if(ourMap.containsKey(ss))\{\cb1 \
+\cb3                 ourMap.put(ss,ourMap.get(ss)+1);//if they are duplicated, we are increasing\cb1 \
+\cb3                 //the value +1, i tried to do this using ++count but i did not get my result\cb1 \
+\cb3                 // so I got this option from google.\cb1 \
+\cb3             \}else\{\cb1 \
+\cb3                 ourMap.put(ss,1);//if key is not duplicated, then we are leaving it with value 1\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\cb3         for(Map.Entry<String,Integer> entry: ourMap.entrySet())\{ // we need entrySet to get\cb1 \
+\cb3             //a proper view of the mapping\cb1 \
+\cb3             System.out.println(entry.getKey()+" = "+ entry.getValue());\cb1 \
+\cb3         \}\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3     \}\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3     public static void main(String[] args) \{\cb1 \
+\cb3         String text="The quick brown fox and the quick blue hare";\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3         task6 Task6 = new task6();\cb1 \
+\cb3         Task6.returnHistogram(text.toLowerCase());\cb1 \
+\cb3     \}\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb1 \
+\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 \}\
+}

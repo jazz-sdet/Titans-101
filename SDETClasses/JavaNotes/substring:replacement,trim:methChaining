@@ -1,0 +1,150 @@
+1- startsWith() --> takes one parameter and if the string is starting with given value return true 
+2- endsWith()  --> return type of this method is boolean 
+3- equals() --> returns boolean result
+
+String name="computer"; 
+
+name.equals("computer"); --> True
+name.equals("Computer"); --> false
+
+4- equalsIgnoreCase() --> takes one parameter as string value and returns boolean result
+
+name.equalsIgnoreCase("COMPUTER"); --> true
+
+6- substring() --> there are two implementation of substring method in java. Return type of substring method is String
+
+sout(name.substring(3)); --> puter
+
+name.toUpperCase(); 
+
+sout(name); --> computer
+
+sout(name.substring(2, 6)); 2,3,4,5
+sout(name.substring(4,10)); 4,5,...8,9 --> stringindexoutofboundexception
+name.substring(4,2); --> stringindexoutofboundexception
+name.substring(4,4); --> empty string str=""
+
+TASK: 
+Using scanner ask user to enter email address(only gmail) 
+Then ask user to create the password
+After that ask user to enter one more time password
+
+--> print true if the email address is ending with @gmail.com
+and both password are matching. 
+
+==========================================
+
+int num=10; 
+
+num=num+10; 20 
+
+num+=10; --> compound assignment
+
+num++; 
+
+sout(num); 
+
+boolean isLightOn=false;
+
+!islightOn --> reverse the boolean value 
+
+
+==========================================
+
+7- replace(String oldChar, String newChar) --> replace method change oldChar with newChar and returns the String value. 
+
+There are two implementation of replace method  
+
+
+replace(String oldChar, String newChar); ""
+
+replace(char oldChar, char newChar); ''
+
+String str="Replace Method"; 
+
+sout(str.replace("ace", "aced"));-->  Replaced Method
+
+sout(str); --> Replace Method(String is immutable)
+
+str=str.replace("e","k"); --> replace method will change all matching "e" with "k"; 
+
+--> Rkplack Mkthod
+
+str.replace("z", "r"); --> since we don't have "z" inside our string, it will not replace anything. 
+
+8 trim() --> trim method trim the spaces in the beginning and at the end of our String. Trim method returns string value. Trim method will not delete the space between the words
+
+String str="     Success is the target      "; 
+
+sout(str.trim()); 
+
+
+METHOD CHAINING
+
+String fullName="  MuammeR TuraN - Instructor  "; 
+
+fullName=fullName.toUpperCase(); --> will change the String with Upper Case 
+
+"  MUAMMER TURAN - INSTRUCTOR  "
+
+fullName=fullName.replace("-","/")
+
+"  MUAMMER TURAN / INSTRUCTOR  "
+
+fullName=fullName.trim(); 
+
+"MUAMMER TURAN / INSTRUCTOR"
+
+
+fullName=fullName.toUpperCase().replace("-","/").trim();
+
+===================================
+
+IF STATEMENT(Conditional Statement)
+
+if(booleanCondition){
+	
+	// write the code to execute
+}
+
+---> We use curly braces to execute block of code in java. Between curly braces is also called scope in java. 
+
+
+int x=10; 
+int y=5; 
+
+if(x>y){
+	
+	sout(x is bigger than y); // it will be executed if my condition is true. 
+}
+
+READ the book 67- 76
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

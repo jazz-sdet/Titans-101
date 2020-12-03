@@ -1,0 +1,89 @@
+MULTIDIMENSIONAL ARRAY: 
+
+int [] evenNums={4,6,8,10,12,4 }; 
+
+int [] oddNums={1,3,5,11,13,17};
+
+int [] primeNums={2,3,5,7,11,13}; 
+
+int [][] numbers=  { {4,6,8,10,12,4 },  {1,3,5,11,13,17}, {2,3,5,7,11,13} }; 
+
+int numbers [][] =  { {4,6,8,10,12,4 },  {1,3,5,11,13,17}, {2,3,5,7,11,13} }; 
+
+int nums[][]=new int [3][6]; --> first square bracet defines how many array I have inside big array, second square bracet defines how many elements i have inside each array. 
+
+nums[0][0]=4; 
+nums[0][1]=6; 
+nums[0][2]=8; 
+nums[0][3]=10; 
+nums[0][4]=12; 
+nums[0][5]=4; 
+nums[1][4]= 13; 
+nums[2][2]= 5; 
+
+sout(nums[2][4]); --> output will be "0" since inside the nums array i did not define any value for given position. That's why java will give default value in array. It will be 0 for int value. 
+
+sout(numbers[2][4]); --> output will be 11
+
+
+int numbers [] = new int [4]; 
+numbers[0]=5; 
+numbers[1]=8; 
+numbers[3]=2; 
+numbers[2]=10; 
+
+int numbers[]= {5,8,2,10}; 
+
+================================================
+
+Create two two dimensional array with given values; 
+
+Products: 
+"watermelon", "apple", banana
+beans, lettuce, cabbage, onion, potato, cucumber
+orange juice, pepsi, water, lemonate
+
+
+============
+Prices: 
+1.99, 1.49, ,0.48
+1, 0.99, 2.99, 1.99, 0.69, 1
+3.99, 1, 4, 5 
+
+Print the values in following format: 
+
+Fruits --> watermelon (1,99), apple (1,49), banana(0.48); 
+..
+.. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

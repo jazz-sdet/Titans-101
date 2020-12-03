@@ -1,0 +1,171 @@
+------------------
+String name="Muammer"; 
+String test="Muammer"; 
+String test1=new String("Muammer");
+String test2=new String("Muammer"); 
+
+sout(name==test); --> true 
+sout(name==test1); --> false
+sout(test1==test2); --> false
+
+Integer num1=10; stack
+Integer num2=10; stack
+Integer num3=new Integer(10); heap
+
+sout(num1==num2); --> true
+sout(num1==num3); --> false
+sout(num1.equals(num3)); --> true
+
+Car car1=new Car("Acura"); 
+Car car2=new Car("Acura"); 
+Car car3=car1; 
+
+sout(car1==car2); --> false
+sout(car1.equals(car2)); --> false
+sout(car1==car3); --> true
+sout(car1.equals(car3)); --> true
+
+Access Modifiers
+Public -> accessible everywhere in the project
+Private -> accessible in the same class
+Protected -> accessible in the same page and outside of the package under subclasses
+Default -> package protected --> only accessible inside the same package
+
+Encapsulation 
+We are hiding direct usage of instance variables from the user of the class. The instance variables should have private access modifier for encapsulation.
+
+private String city; 
+
+getter 
+public String getCity(){
+	return city; 
+}
+setter 
+public void setCity(String city){
+	this.city=city; 
+}
+
+Immutable Class
+If you create the only getters inside the class without setters, this class will be immutable class.
+
+public class Car{
+	private String name; 
+
+	private int sum(int num, int num1){
+	return num+num1; 
+	}
+
+	public int getSum(int num, int num1){
+	return sum(num,num1); 
+	}
+
+	public String toString(){
+	return ""+name; 
+	}
+
+	main(){
+	Car car=new Car(); 
+	sout(car);
+	}
+
+}
+
+StringBuilder
+
+* String is immutable. 
+* StringBuilder is mutable 
+* String and StringBuilder has different methods
+* String created many object once we modify it. StrinbBuilder creates only one object and modify this object. 
+
+StringBuilder str=new StringBuilder("Test");
+
+append(); --> it takes many different parameter like string, boolean, int, double and it will be added to your StringBuilder object. 
+
+str.append("Chicago"); 
+str.append(2020);
+str.append(true); 
+We can do method chaining in StringBuilder if the method return type is StringBuilder. 
+
+TASK: 
+Create one ArrayList to store StringBuilder object with following values. 
+Computer
+Table
+Mic
+Phone
+Cable
+
+Insert the 0 in the middle of every StringBuilder object. 
+Also insert the K at the end of every SBuilder object.
+
+StringBuffer vs StringBuilder
+StringBuffer is synronized. 
+StringBuilder is not synronized. 
+
+
+Collections(Set, Map)
+Set
+* Set is an interface
+* Set has 3 different implementation (HashSet, LinkedHashSet,TreeSet)
+* Inside the set we can store only Objects.
+* We can store only unique values inside all Set implementation 
+
+ HASHSET
+* The values will be stored without order. 
+* Hashset will store hashed value. "Techtorial" --> @asdf53
+* Since we don't have order in HashSet, there is not get method.
+* HashSet is class
+* Inside hashset we can store null values
+
+
+Set<String> names=new HashSet(); 
+HashSet<String> names=new HashSet<String>(); 
+
+names.add("Ruslan");
+
+
+
+* Reverse String
+* Order the array without sort method
+* find second largest value of array
+* Fibonacci number
+* perfect number
+* Prime number
+* Palindrome (121, civic)
+* Armstrong number 153 = 1 * 1 * 1 = 1 5*5*5= 125 3*3*3= 27 
+* Star tree
+* Factorial number
+* Unique char
+* techtorial --> 
+t-2 
+e-1 
+c-1 
+h-1
+	muammer 
+	m-3
+	u-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

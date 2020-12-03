@@ -1,0 +1,99 @@
+Nested Loop
+
+for(int i=1;i<5;i++){--> outer loop
+	
+	for(int k=0;k<3;k++){ --> inner loop
+		sout(i); 
+		sout(k); 
+	}
+
+}
+
+101112 202122 303132 404142
+==========================
+
+for(int i=1;i<5;i++){--> outer loop --> 4 times
+
+		sout(i); 
+
+	for(int k=0;k<3;k++){ --> inner loop --> 12
+		sout(k); 
+	}
+
+}
+
+What will be the output? 
+1012 2012 3012 4012
+
+TASK:
+Using Scanner ask user to provide mileage of the car
+
+I need to change my oil in every 3000 miles 
+and I need to fill the gas tank in every 500 miles
+
+18000--> car's mileage
+
+Change the oil
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+Change the oil
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+Change the oil
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+fill the gas tank-500
+
+
+
+Break Statement 
+
+It will terminate the loop.  After break keyword we can not write the code, it will give compile time error. Becasue the code which is after break keyword is unreachable. 
+Break statement will terminate the nearest loop. If you use break inside the inner loop it will only break the inner, outer loop will continue to run. 
+
+
+"terminate"
+
+take all chars from string and print only first matching e from given string. 
+
+
+Continue Statement 
+1- Continue statement will not break the loop but it will skip the current iteration and continue from the next iteration
+2- After continue statement you can not write the code, since it will be unreachable statement
+3- Continue statement will skip the iteration for nearest loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

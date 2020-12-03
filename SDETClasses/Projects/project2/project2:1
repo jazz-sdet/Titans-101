@@ -1,0 +1,30 @@
+ /* 1.First open Google app
+           2.Go to search button
+           3.Google search is not case sensitive
+
+           4.Type a word in search box
+           5.Click for a search button
+           6.Space and spelling sensitive
+           7.The limit of words can be typed is 37.
+
+
+        Calculator
+       1. Simply need to know the true of a calculation
+       2.Cannot handle numbers larger than 9.99999999 x 10’99 numbers beyond
+        this value create an overflow error.
+
+        Lightbulb
+        Test each individual lightbulb switches to find out which lightbulb
+        switch to turn on the light one at a time.
+
+        Turn on two switches(call them A and B) on and leave them on for a few minute.
+        Then turn one of them off(switch B0 and enter the room.
+        The bulb that is lit is controlled by switching A. Touch the order two bulbs
+        (They should be off). The one one that is still warm is controlled by switch B.
+        The third bulb(off an cold) is controlled by switch C.
+
+
+         */
+
+    }
+}

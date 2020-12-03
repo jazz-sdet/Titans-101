@@ -1,0 +1,54 @@
+Window Handle
+Every page/tab has own id. We need to switch the driver if we want to handle the different windows. 
+
+How can we get the current page id? 
+getWindowHandle() --> it will return current page id as String value. 
+
+herokuApp 
+New Window 
+How we can get all page id on the driver? 
+getWindowHandles() --> It will return set of page ids from driver
+
+driver.switch().window(id);
+
+1- How do you handle the new windows/tab/page? 
+2- What is the return type of getWindowHandles() method? 
+3- What is the difference between getWindowHandle() and getWindowHandles() ? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

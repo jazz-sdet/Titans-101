@@ -1,0 +1,19 @@
+public static void scrollIntoView(WebDriver driver, WebElement element){
+        JavascriptExecutor js=(JavascriptExecutor)driver;
+        js.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public static void hoverOver(WebDriver driver, WebElement element){
+        Actions actions=new Actions(driver);
+        actions.moveToElement(element).perform();
+    }
+    
+    public static void click(WebDriver driver, WebElement element){
+        Actions actions=new Actions(driver);
+        actions.click(element).perform();
+    }
+    
+    public static void jsClick(WebDriver driver, WebElement element){
+        JavascriptExecutor js=(JavascriptExecutor)driver; 
+        js.executeScript("arguments[0].click()",element);
+    }

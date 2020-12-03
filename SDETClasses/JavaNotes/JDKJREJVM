@@ -1,0 +1,66 @@
+
+
+JDK(Java Development Kit)
+TO be able to write and run the java code we need JDK. 
+
+Inside JDK we have JRE and development tools(java, javac, jar, javadoc etc). 
+
+JRE (Java Runtime Environment)
+To be able to run the java code we need JRE. 
+Inside JRE we have JVM and other libraries to run the java code
+
+JVM (Java Virtual Machine)
+It will convert your code line by line for computer. According to that the computer will execute the command which is coming from java code. 
+
+=====================================
+Why did you choose the Java as Programming Language? 
+- I know a lot of companies implementing the automation framework using java programming language. That's why I choose java. I think that it will be easy for me once I start working in the company. 
+
+Features of Java Programming Language
+1- Java is Object Oriented Programming Language. It is close the %100 of OOP. 
+2- Java has great collection of open source tools like (Selenium WebDriver, Rest-Assured Library, TestNG, JUNIT). Open source tool means free java libraries that you can use with Java Programming Language. 
+3- Community support --> you can find the solution for your java problems easily in the internet. 
+4- Documentation support --> Java has great documentation which is provided by oracle company. 
+5- Java is platform independent. So you can write the code in Windows platform and run in Linux. 
+6- Java is the language that you can Write Once Run Everywhere (WORA)
+
+
+TASK: with cat go to the top of your y coordinate then draw the triangle as a roof of your house using red pen color. 
+
+
+ScreenShot for Mac --> command+shift+4
+
+Windows Users
+Windows user go left down of the computer screen there should one search box. Powershell
+
+Windows Powershell X86
+
+Mac Users
+Go to the right top side of your screen and there is one search button. Search "Terminal" and open the terminal application 
+
+Basic Terminal Commands
+1- pwd --> Print work directory. It shows us the current folder directory. 
+2- ls --> list directory. This command list all the folder and files under current directory. 
+3- cd --> change directory. Using cd I can navigate to the different folder. 
+4- open --> open fileName. This command opens the file. 
+5- mkdir --> Make directory. It will create new folder inside current directory. 
+
+Windows To copy the text --> ctrl+c
+Mac to copy the text --> command+c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

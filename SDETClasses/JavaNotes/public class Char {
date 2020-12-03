@@ -1,0 +1,45 @@
+public class Char {
+    public static class Main {
+        public static void main(String[] args) {
+            String value = "MUAMMER";
+            char[] array = value.toCharArray();
+            array[0] = 'M';
+            for(char c : array) {
+                System.out.println(c);
+            }
+        }
+    }
+}
+
+
+
+int result=4*7+3-2*9%5/3-2;
+'*', '/', '%' signs will be executed before '+', '-' signs.
+First 4*7 then 2*9 next 18%3 its remainder is 3 3/3 will be executed first before + and - signs. Since same level precedence occured more than once it was evaluated from left to right.
+now it looks as 28+3-1-2=28
+
+int result=12-3/3+4-2*2%4+12%3/3;  3/3 2*2 4%4 12%3
+            12-1+4/3
+
+            are these methodologies used by developers and testers as well? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

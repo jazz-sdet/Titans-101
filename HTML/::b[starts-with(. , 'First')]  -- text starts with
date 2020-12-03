@@ -1,0 +1,26 @@
+//b[starts-with(. , 'First')]  -- text starts with 'First'
+
+Interview question related to xpath:
+How do you find an element? I am using locators such as: ids, names, class
+
+How to start automating without existing page?, devs they just designed UI page
+ATDD-
+Prep xcel file
+
+
+String URL = driver.getCurrentUrl();
+        if(URL.equals( "https://www.saucedemo.com/inventory.html")){
+            System.out.println("Current url is matching");
+        }else{
+            System.out.println("Current url is different");
+        }
+        System.out.println(driver.getTitle().contains("BlazeDemo Confirmation"));
+
+        try{
+            Boolean displayed=driver.findElement(By.xpath("//span[text()='Thank you for your purchase today']")).isDisplayed();
+            System.out.println("Expecting element to be displayed is - 'Thank you for your purchase today'");
+        }catch (Exception NoSuchElement){
+            System.out.println("No such an element as 'Thank you for your purchase today' is displayed");
+        }finally {
+            System.out.println("The 'try catch block' is finished");
+        }

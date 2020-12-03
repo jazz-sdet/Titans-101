@@ -1,0 +1,85 @@
+WHAT IS SPLIT METHOD?
+What is the return type of split method? The return type of array is - String Array.
+Inside the split method we use regex(regular expressions)
+If you provide " " it will be splitting your string by space. If \\. it will be splitting your string by with dot. If you split your string using "" it will split your string by every string character.
+Split method takes regex value as parameter.
+
+			TASK:
+F.Ex: S2p4l5it meth31od tak3es reg9ex val34ue as par6amet9er.
+
+Use "" string to split the string for each character.
+Using split method print all the numbers from given string value
+
+Character.isDigit method: if the char is digit isDigit method returns true, otherwise false. But, once I get my every single value in here it is not char because it was stored as String (data type) i need to convert or get char in this task (every single char is zero).
+
+String str="S2p4l5it meth31od tak3es reg9ex val34ue as par6amet9er.";
+
+        String [] chars=str.split("");
+        System.out.println(Arrays.toString(chars));//all time 1 char which 0
+        //Character.isDigit()
+
+        for(int i=0; i<chars.length; i++);
+
+
+Character.isAlphabetic(char) -->If the char is alphabetic the method returns true, otherwise false.        
+
+
+-------------------MultiDimensional Array
+You can extend your dimension as much as you want. We will be storing different values inside arrays and you can categorize them f.ex. only {odd num}{even nums}----- int [][] Nums={ {2,4,6,8,10,12}, {1,3,5,7,9,11,13,17} }; 
+ONLY SAME DATA TYPE, If it is curly braces it means it is an object, if it is square bracets it is array or multiple values collection. In order to understan how many dimensional array jus count how many curly braces there are:
+{ {2,4,6,8,10,12}, {1,3,5,7,9,11,13,17} }; it is two curly braces it means 2 dimensional array.
+int primeNums={2,3,5,7,11,13}
+
+int [][] Nums = { {2,4,6,8,10,12}, {1,3,5,11,13,17}, {2,3,5,7,11,13}};
+int [] Nums[] = { {2,4,6,8,10,12}, {1,3,5,11,13,17}, {2,3,5,7,11,13}};
+int Nums [][] = { {2,4,6,8,10,12}, {1,3,5,7,9,11,13,17},{2,3,5,7,11,13} };
+[][] can be put like above but it has to be put before '='.
+int numbers [][] = new int [3][6];-->1st square bracet defines the quantity of big array, second square bracet defines how many elements there are in each array.
+nums [0][0]=4;
+nums [0][1]=6;			First [] defines which array 0,1 or 2. second [] 
+nums [0][2]=8;
+nums [0][3]=10						defines index number						
+nums[1][4]=13;
+nums [2][2]=5;
+
+IF IN MULTIDIMENSIONAL ARRAY each array has different values each array and its values have to be defined like:
+
+
+
+int nums[][]=new int[][]; here the size the array has to be defined if not compile time error.
+int numbers []=new int[4];
+numbers[0]=5;
+numbers[1]=8;
+numbers=[3]=2;
+numbers=[2]=10;
+
+int numbers[]={5,8,2,10};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

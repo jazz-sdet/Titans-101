@@ -1,0 +1,62 @@
+TELL ME HOW DO YOU FIND WEB ELEMENT? YOUR FAVOTITE OPTION?
+you should say wahich one do like using.
+id
+name
+tag
+attribute
+ccs
+parent
+child relation ship
+following-sibling
+preceding-sibling
+2. in your company what testing types are you do with selenium?
+    a.Functional testing (application function)
+    b.Regression
+    c.smoke
+3. Asserion types
+    a.Hard Assertion (Assert.assertEquals(ActualTitle, ExpectedTitle);
+    B.Soft assertion softassert.assertEquals(ActualTitle, ExpectedTitle);
+    c.assert keyword (assert number <= 10; // stops if number > 10)
+4. List out the technical challenges with Selenium?
+    Selenium supports only web based applications
+    For any reporting related capabilities have to depend on third party tools (TestNG,Extent Library.)
+    No vendor support for tool compared to commercial tools like HP UFT
+   As there is no object repository concept in Selenium, maintainability of objects becomes dificult
+               a.What is Object Repository ?
+                        answer: (docs.properties and xml file)
+5.What is the difference between verify and assert commands? (hard assertion and soft assertion)
+
+6.How do you handle alerts?
+-How many different ways you can handle alerts?
+
+7.How do you check if your code is working right? I will run in debug mode and evaluate the expression. 2.Do negative testing if it fails or not to validate if code is working properly.
+
+--Concrete class- is the first class where interface is implemented.
+
+8.How many methods are there inside alert class? - Accept(), getText(), sendKeys(),dismiss(); 
+
+9.What is jar file? Many java classes inside
+
+10.JavaScript Executor-1.click the elements, 2.create alert, 3.scroll the page->specific location, scroll to the end of the page, scroll until the element is visible. 4.get title of the page, 5.refresh page, 6. Change css for the page(why? If click is not working u can use javascript.
+
+What is JavaScriptExecutor? It is one interface in selenium to execute java script code.Syntex is: JavaScriptExecutor js=(JSEX)driver;
+Js.execScr("jscode");
+
+How do you scroll the page using Selenium? I am using JSExecutor, I can provide the coordinates of the specific location is scrollTo method
+js.executScript("window.scrollTo(x,y)");
+
+Or 
+js.executScript("arguments[0].scrollIntoView(true)", element);
+
+What is TestNG? It is a testing framework that was originally developed for Unit testing for developers.
+But as a functional testers we are integrating TestNG into our projects to take advantages of its structure annotation.
+Why do we use it? What kind of advantages it is providing us?
+
+TestNG annotations are allowing us to create an orgonazed structure for our testing.
+@Test- annotation is allowing us to create independent test. (We donuts main method with TestNG) @BeforeClass runs once before class
+	@AfterClass	runs once after class
+	@BeforeMethod
+	@AfterMethod
+
+
+

@@ -1,0 +1,47 @@
+int k=7
+int n=3
+int result=k++ * ++n / ++n % k + n - k++;
+int $result=k + k++ * k - n++ % n + ++n;
+
+
+
+First the original value will be used since there is post increment and the origininal value is seven.
+Then the original value of n is 3 and there is a pre increment n will be equal to 4.
+Now n is equal to 4 n=4 ++n=5
+The value of k is 8 n=8
+k=5 because of the last pre increment so k++ now will remain the same because there is post increment.
+7*4/5%8+5-8
+First 7*4=28
+Second 5%8=5
+28/5+5-8
+28/5=5
+5+5-8=2
+k=9
+n=5
+result=2
+
+**************************************
+Since the first the operation ended with post increment k++ the value of k is 9
+n value is 5
+**************************************
+
+k=9
+n=5
+int $result=k + k++ * k - n++ % n + ++n;
+k's value will remain the same which is 9
+k++ since it is a post increment the value remains the same 9
+then k=10 result from the last value
+n=5 remains the same as it is post increment
+now n is equal to 6
+++n is 7 
+9+9*10-5%6+7=
+
+9+90-5+7=101
+9*10=90 because the level of precedence is higher which multiplication
+9+90-5+7 now it will go from left to right to count
+9+90=99
+99-5=94
+94+7=101
+k=10
+n=7
+$result=101

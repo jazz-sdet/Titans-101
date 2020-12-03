@@ -1,0 +1,289 @@
+MULTIDIMENSIONAL ARRAY: 
+int [] evenNums={4,6,8,10,12,4 }; 
+int [] oddNums={1,3,5,11,13,17};
+int [] primeNums={2,3,5,7,11,13}; 
+int [][] numbers=  { {4,6,8,10,12,4 },  {1,3,5,11,13,17}, {2,3,5,7,11,13} }; 
+int numbers [][] =  { {4,6,8,10,12,4 },  {1,3,5,11,13,17}, {2,3,5,7,11,13} }; 
+int nums[][]=new int [3][6]; --> first square bracet defines how many array I have inside big array, second square bracet defines how many elements i have inside each array. 
+nums[0][0]=4; 
+nums[0][1]=6; 
+nums[0][2]=8; 
+nums[0][3]=10; 
+nums[0][4]=12; 
+nums[0][5]=4; 
+nums[1][4]= 13; 
+nums[2][2]= 5; 
+sout(nums[2][4]); --> output will be "0" since inside the nums array i did not define any value for given position. That's why java will give default value in array. It will be 0 for int value. 
+sout(numbers[2][4]); --> output will be 11
+int numbers [] = new int [4]; 
+numbers[0]=5; 
+numbers[1]=8; 
+numbers[3]=2; 
+numbers[2]=10; 
+int numbers[]= {5,8,2,10}; 
+================================================
+Create two two dimensional array with given values; 
+Products: 
+"watermelon", "apple", banana
+beans, lettuce, cabbage, onion, potato, cucumber
+orange juice, pepsi, water, lemonate
+============
+Prices: 
+1.99, 1.49, ,0.48
+1, 0.99, 2.99, 1.99, 0.69, 1
+3.99, 1, 4, 5 
+Print the values in following format: 
+Fruits --> watermelon (1,99), apple (1,49), banana(0.48); 
+..
+.. 
+techtorial2200
+\
+Classes and Objects in Java
+1. Any code that you want to store in a file MUST have .java extention.
+2. The class name MUST be the same as the file name that we have that class in.
+3. PIC -> Package, Import, Class order in the class:
+        -> we can have at most ONE package declaration (0 or 1)
+        -> we can have 0 to unlimited imports in our class
+        -> we can ONLY have 1 "public class" in the our class
+4. We can ONLY have single "public class" in a java file.
+5. The class attributes/behaviours are:
+    - methods
+    - variables
+Variables:
+    - datatype
+    - variable name
+    - assign value
+long distance;                  => declaring a variable
+long distance = 10000000;       => initializing a variable
+2 variable types:
+    - instance variable (declared/initialized on a class level)
+    - local variable (declared/initialized inside of a method)
+Local variables are only available inside of specific method(where the variable was declared)
+Variable naming:
+    1. Convention: variable starts with lower case, and follow camelCase if more than 1 word.
+    2. we cannot use java reserved keywords(public, static, main, private, String....)
+    3. no space allowed
+    4. we cannot start with numbers, characters.
+    5. we are allowed to use _ or $ to start our variable name with.
+    6. variable must be unique (variables are case sensitive).
+Variable rules:
+    1. Instance variables get some default values assigned in case we simply declare it
+    2. Local variables do NOT get default values assigned.
+Objects:
+    - objects are created in order to access instance variables
+    - objects are created using "new" keyword
+    - the syntax of creating object of class:   
+                ClassName reference/variable = new ClassName();
+ Using objects we can have access to a instance variables. 
+ Local variables are not accessable from ANYWHERE except the method where we define the local variable.
+Class is a blueprint for our objects.
+Every new object gets a separate set of attributes(variables).
+Every class has attributes and behaviour:
+    attributes are variables
+    behaviour is method
+Method - is a set of commands, that has it's own name, and can be called when needed.
+Method - is block of code which only runs when called.
+Rules:
+    1. Methods live inside of the class
+    2. Methods cannot be created inside of another method
+    3. Methods must have a name
+    4. Methods have a scope which we define using "{}"
+Method Name:
+    1. by convention better to start method name with lower case
+    2. if multiple words used for method name -> use camelCase
+    3. cannot method startign with numbers or special characters
+Method output:
+The call to the methods expect some result. The results can be:
+    - void                  -> I don't expect anything returned to me
+    - non-void return       -> I expect something to be returned
+1. Create a class
+2. Declare 5 instance variables with different data types
+3. Initialize 5 intance variables with different data types
+4. Create main method with 5 local variables.
+1. Create a class with main method
+2. Create objects from Student class, Car class
+3. Print out values of Student and Car classes:
+    e.g:
+         System.out.println("The student's school name is " +value);
+         System.out.println("The car's model is " + value);
+1.
+public void myMethod(){
+    System.out.println("my method is called");
+}
+2. 
+public void superNameOfMyMethod(){
+    System.out.println("my method is called");
+}
+<?> - with valid value to make the method work
+3. 1) Create a SoccerPlayer class
+   2) Add 3 instance variables
+   3) Add 2 methods to play(), score() with simple print out implementation
+   4) Create an object from SoccerPlayer class and call the play(), score() methods
+Student objectOfStudentClass = new Student();
+public void printNumbersFrom1to100(){
+    for(int i =1; i<101; i++){
+        System.out.println(i);
+    }
+}
+1. Create a method that will print out only odd numbers from 1 to 100
+2. Call the method from our main method
+Global search in intellij: mac -> command + shift + F
+                            win -> Ctlr + Shift + F
+1. Create a method to print out every letter from "Techtorial"
+2. Call the method from main method
+The goal is:
+- print out 'A' to 'Z' and 'a' to 'z'
+A - 65
+Z - 90
+1. Create a method to print out lower case letters from a to z
+2. Call the method from main method
+a - 97
+z - 122
+Methods:
+    1. We cannot have 2 or more methods with the same name in one class.
+Component of method:
+    While creating a method we should pay attention to following components:
+        - accessModifier (public)
+        - returnType (void)
+        - method name
+        - method body (everything between opening and closing curly braces)
+public void myCoolMethod(){
+    
+}
+public -> access modifier
+void -> return type
+myCoolMethod -> method name
+{} -> method body
+Components all together are called - method signature.
+We can put some rules while creating a method, like every service has.
+Adding a parameters/arguments to a method will make the method more flexible.
+the parameters/arguments are added inside of paranthesis after method name:
+e.g.
+    public void myCoolMethod(String name){
+    }
+        public -> access modifier
+        void -> return type
+        myCoolMethod -> method name
+        String name -> method paramter
+Task:
+    1. Create a greeting method, where the method takes String as a parameter/argument
+    2. Greet the user using the name provided as a parameter.
+    3. Call the greeting method from main method
+1. Create a method that takes String as parameter
+2. Iterate over every letter of given String and check if the letter is vowel(use switch)
+3. Print every vowel from given string
+4. Call the method from main method
+#####hw#############    
+1. Update the existing printVowelsFromString() method to get all vowels and construct a new String for, instead of separately printing every letter 
+1. Create a method, that takes 2 arguments/parameters and multiply those numbers
+2. Print out the result.
+1. Create a method that takes 3 parameters/arguments: 2 int, 1 boolean.
+2. If boolean value is true we will multiply the numbers, if boolean is false that we will divide the numbers
+1. Create a method that takes 4 parameters/arguments: 2 int (lowerBound, upperBound), boolean, String
+2. Add all numbers starting from lowerBound to upperBound 
+3. if boolean is true -> print out the result of the operation, if it's false:
+"Hey, "+String parameter+" the computation of "+lowerBound parameter +" and "+upperBound parameter +" has finished."
+1. Create a method with 2 int parameters and find the larger of two and print out
+2. Create a method with 3 int parameters and find the larger of three and print out
+3. Create a method with 2 String parameters and find the longer of two and print out the string
+4. Create a method with 2 String parameters and find the string that has more vowels, if they have same number of vowels or NO vowel then print out both strings
+5. Create a method with 2 String parameters and 1 int parameter, check if length of each string is more than int paramters.
+1. Create a method that will be counting words in a string and print the number of words
+2. call that method from main method.
+3. Implement the scanner logic.
+Method types:
+    - void
+If method is marked as "void", it means that the method will not be returning any value, the computation will end in the method.
+    - non-void
+We specify the return data type in the method signature, and our method MUST end with "return" keyword and some value (the same data type that we have specified in method signature).
+    e.g.:
+        public long getLongValue() {
+            return 100000000000000; -> since we have specified the long return type we are 
+                                        required to put "return" keyword
+        }
+public -> access modifier
+long -> return type
+getLongValue -> method name
+() -> empty method paramter
+1. Create a method with int return type
+2. Method should get 2 parameters and find out the smallest number(if the numbers are equal, return either of them)
+3. In main method use the value returned from the method and find out if it's odd or even number
+Swap numbers:
+int a = 5;
+int b = 10;
+a = 10;
+b = 5;
+solve it without using temp number.
+Process of creating object out of a class called instanciating a class (creating instance of a class).
+1. Convert 5 methods with void return type that we have already created to return some data type.
+2. Try to break the password validation method in 3 different ways
+Learning never ends.
+for(int i = 0; i < 10; i--){
+    learning;
+}
+1. Create a method that takes string as a parameter
+2. And returns array of characters that contains all chars from given string
+(Get string and put all its letters in array)
+ 1 = N sec
+ 2h = 2N seconds
+1. Create a method that will calculate number of seconds in given number of hours
+2. Call the method from main method and print out the returned value
+1 h = 60 m
+1 m = 60 s
+1 h => seconds
+1*60*60=3600
+1. Create a method that will calculate number of hours in given number of seconds
+2. Call the method from main method and print out the returned value
+1. Add 3 more converter methods.
+2. Convert String into char[] in a reverse order.
+3. Create a method that takes String as a parameter and returns middle character, if the length of string is even return 2 middle characters.
+Imports in java:
+    - if the class that we want to create an object from located in the same package then we don't need an import statement
+    - if the class that we want to create an object from located in different package then we need to have import statement
+In order to be able to call the method from different class, we should make method's access modifier "public".
+1. Create a separate class PrimeNumber
+2. Create a method that will return true if given number is Prime number otherwise return false
+3. Call the method from PrimeNumberTest class
+Prime number is a number that can only be divided by 1 and itself. 
+=================Method overloading==========================
+We can 2 methods in the same class with same name with 1 condition:
+    the methods MUST have different number or different order of parameters.
+Method is when we have 2 method in a class with same name but different set of parameters/arguments.
+Set of parameters/arguments:
+    - number of parameters
+    - data types of parameters
+    - order of parameters(in case we have different data types)
+We can overload a method using different data types, but the same number of parameters/arguments.   
+Method overloading is having multiple methods in a class with same method name but different method signature.
+Same method name, different signature.
+1. Create a 4 arguments/parameters method and overload that method in every possible way by swaping order of parameters. Every overloaded method should accept 4 parameters.
+==========================foreach loop============================
+Loop - in java. Repetative execution of the code.
+- while loop
+- do while loop
+- for loop
+- for each loop
+while (condition) {
+    some action
+}
+do {
+    some action
+} while(condtion);
+for (int i = 0; i < condtion; i++){
+    some action
+}
+foreach loop - works only with Arrays and collections.
+for loop - works with Arrays and collections OR in general purpose.
+int[] numbers = new int[] {1234, 343, 232};
+for(int i : numbers){
+    System.out.println(i);
+}
+1. Create 3 overloaded methods in MethodOverloading class to find out average of given numbers
+1. Create 5 overloaded methods in MethodOverloading2 class data types: whichDataType();
+1. Define long[] of size 35, using for loop put 35 elements in long[]
+2. Using the for each loop, get sum of all elements from long[]
+Please use foreach loop
+1. Create a method with 1 String parameter which will store and return every letter of given string into char[]
+2. Create another method that will take String[] that will return String of all elements from char[] as a single String
+3. Pass char[] from 1 method to a second method
+4. Call both methods from main method.

@@ -1,0 +1,128 @@
+Differences between Ternary Operator and If Statement
+1- Syntax is different between two implementations
+2- We use Ternary Operator for short conditional statement but using if statement we can do more complicated implementation 
+
+
+TERNARY OPERATOR
+booleanCondition ? value1 : value2;
+
+Value1 and value2 can be different data type. However if you are assigning the result of ternary operator to one data type, value1 and value2 should have same data type. 
+
+sout( 5>3 ? "5 is bigger than 3" : 33 );
+
+
+String result= 5>3 ? "5 is bigger than 3" : "33"; 
+
+
+sout("33"+"33"); --> "3333"
+sout(3+5+"7"); --> 87
+sout(3+4+"4"+1+2); --> 7412
+
+=========================================
+Switch Statement
+
+It is decision making structure where single matching case statement will be executed. If none of the case matching then default satement will be executed. 
+Default is not required for switch statement. 
+
+For Switch statement we can only use following data types: int, byte, short, char, String and ENUM. Those data types in case statement should be constant value for switch statement. Constant means not changable values. 
+
+int studentNumber=124; 
+
+switch(studentNumber){
+	
+	case 124:
+		// body to execute the code
+		sout("Muammer"); 
+	break;
+	case 123:
+		sout("Tima"); 
+	break;
+	default: 
+		sout("There is not student matching with given student number. ");
+
+}
+
+NOTE: In switch statement we can use default anywhere in implementation. If you use the default somewhere in the switch statement, we need to use the break for correct execution. 
+
+1- We can not use more than one time same case value. 
+2- 
+
+
+int num=100; 
+
+byte test=num; 
+
+NESTED SWITCH STATEMENT
+We can use switch statement inside another switch stement. 
+
+TASK: 
+Using scanner ask user to provide the state name Illinois or California
+
+Once you find the matching case with given state name then ask user to provide city name 
+
+then inside another case statement for cities print given state name and city name with following format
+
+"The provided state name is STATENAME and city is CITYNAME "
+
+ILLINOIS --> Chicago, Elgin, Rosement
+California --> Los Angeles, San Francisco, San Diego
+
+Difference between If Statement and Switch Statement 
+1- Syntax is different 
+2- In if statement we use boolean condition. However in switch statement we use certain data types like int, short, byte, String, char and ENUM values. 
+3- In if statement we have else condition, for switch we have default statement. 
+4- Instead switch we can use everytime if statement but we can not use switch everytime instead of if statement.
+
+LOOPS 
+
+In java we have 4 types of loops. 
+While Loop, Do-While Loop, For Loop, ForEach loop 
+
+NOTE: We use the loops when we try to execute the code multiple times with different value or same value. We can use while loop, do-while loop and for loop in our implementation. They will be working with same name only syntax is different.  
+
+
+WHILE-LOOP 
+
+while (booleanCondition){
+	// body 
+}
+
+READ THE BOOK 72-83 until foreach loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

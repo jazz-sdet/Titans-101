@@ -1,0 +1,13 @@
+TASK: 
+EMPLOYEE: 
+Create one employee class with private names, city, height, employeeNumber
+Create the contructor to initialize the instance variables
+Create to string method to print all the information of the employee object
+Create getters and setters for instance variables
+Create one static method to generate 8 digit employee number
+
+EMPLOYEETEST: 
+Create one Map to store the employees with their employee number. Key will be employeeNumber
+Print only the names of the Employees
+Print all the information of the employee
+Print all the keys of the map

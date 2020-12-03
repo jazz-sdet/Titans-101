@@ -1,0 +1,47 @@
+
+so these data types can only be assigned to numbers? 
+
+soo float or int can go up to 32bit which equals to Min = 1.4E-45
+Max = 3.4028235E38 value for int -2147483648 to 2147483f
+
+
+f.ex 
+ why both int and float - 32bit? what does it mean?
+so both int and float have the same amout of memory ?
+
+short's max value is 16bit(8+8+8+8+8+8+8+8+8+8+8+8+8+8+8+8) bit which is 3200 to -32000
+
+
+find sum of all digits for 1234 int num=1234;
+
+	****PRACTICE REASSIGMENT
+
+	INITIALIZE = GIVING VALUE (IN JAVA)
+
+	MAIN METHOD WHAT IS IT
+
+
+
+
+	package Variables;
+
+public class Hello {
+
+    public static void main(String [] args){
+
+        int cows=23;
+        int chickens=42;
+        int totalOfAnimals=cows+chickens;
+
+        int cowsLegNum=cows*4;
+        int chickenLegNum=chickens*2;
+        int totalNumLegs=cowsLegNum+chickenLegNum;
+        System.out.println("Total number of legs in farm " +totalNumLegs);
+
+        int totalCowPrice=2000*cows;
+        int totalChickenPrice=11*chickens;
+        int totalAnimalPrice=totalCowPrice+totalChickenPrice;
+        System.out.println("Total of animal  " + totalOfAnimals );
+        System.out.println("Total of animal price is $ " +totalAnimalPrice);
+    }
+}

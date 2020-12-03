@@ -1,0 +1,255 @@
+if Condition
+
+if(booleanCondition)
+
+int x=6; 
+if(x==9)
+
+boolean isCarOn=false;
+
+if(isCarOn)
+	x++; --> not executed
+	x++; --> will be executed
+	x++; --> will be executed
+	x++: --> will be executed
+
+if(isCarOn){
+	
+	x++; 
+	x++; 
+	x++; --> none of them will be executed
+}
+============================================
+
+else if condition
+
+
+=========================================
+
+else
+
+
+if(isCarOn){
+	
+	x++; 
+	x++; 
+	x++; --> none of them will be executed
+}else{
+	
+		x--; 
+}
+
+==================
+
+isCarON=false; 
+
+if(isCarOn)
+	x++; --> not executed
+else
+	x--;
+It will work without an issue. 
+==================
+
+if(isCarOn)
+	x++; 
+	x++; 
+	x++; 
+else  --> ELSE will not work because we have more than one line of code for if condition and we don't have curly braces. It gives us compile time error. 
+	x--;
+
+NOTE: if you don't have curly braces, to be able to use the else statement, we must have only one line of code after if statement. 
+=========================================
+Nested if condition
+
+if(booleanCondition){
+	
+	if(booleanCondition){
+
+		if(booleanCondition){
+	
+		}	
+
+	}
+}
+
+-------------------------------
+
+TASK: 
+Using scanner ask user to enter username and password If username and password is correct then 
+
+Ask user to enter DOB year if the DOB is correct print the age of the person also ask following question like Where do you live? if it is equals to Chicago print IL, if it is equals to Los Angeles print CA and if it is equals to Houston print TX otherwise print "unknown state"
+
+If username and password is not correct print "Please enter correct username and password"
+If DOB year is not correct print "Please enter correct DOB year"
+
+Correct Information: 
+Username: techtorial1
+Password: techtorial2020
+DOB year: 1998 
+
+
+
+===================
+if(10==10)
+	int x=6; // it will give the compile becasue, we can not declare the variable in here. 
+
+	sout(x); 
+
+===================
+int x; 
+int y=5; 
+int z=5; 
+
+if(y==z){
+	x=6; 
+}
+	sout(x); // x might have not been initialized
+
+===================
+int x; 
+
+if(10==10){
+	x=6; 
+}
+	sout(x); // compile and run without an issue
+
+
+
+
+
+
+if(boolean)
+	x++; 
+	x++; 
+	x--: 
+	x
+	...
+else --> else statement without if condition. That's why compile time error. 
+
+if(boolean)
+	x++; 
+else
+	x++; 
+	x++; 
+	x--: 
+
+===========================================
+IHIRED APP
+
+TASK:
+Using scanner ask the user following questions
+
+1- Do you know Java? 
+yes--> Ask second question
+no --> We need a person who knows java
+2- Do you know Selenium? 
+yes--> ask third question
+no --> print you need to learn the selenium
+3- Do you know API Testing? 
+* yes--> print you hired
+* no --> Study for api testing
+* I don't know but I am quick learner --> print you hired 
+============================================
+
+
+TERNARY OPERATOR
+
+
+BOOLEANCONDITION ? "IF CONDITION IS TRUE THIS ONE WILL BE EXECUTED" : "IF CONDITION IS FALSE"
+
+int num=10; 
+
+
+String result= num>=6 ? "number is bigger than or equals to 6" : "number is less than 6"; 
+
+
+\n --> prints the String in next lint
+\" --> to be able to print the double code in the execution 
+\t --> puts one more tab space between the text
+
+=============================================
+
+ int t=3;
+ int r=5;
+
+ int test1= t++ + --r < t+r | ++r - t++ >= 0 & t-- <10 ? r++ + --t + r : (t-- + r--)%2 + 4;
+
+5 + 3 + 6
+
+true
+
+ t = 3
+ r = 6
+
+===========================================
+
+ ---> "Cherry Wooden Spoon".equalsIgnoreCase("wooden spoon");
+ ---> "cherry wooden Spoon".contains("wooden spoon"); 
+ -->  "cherry Wooden Spoon".toLowerCase().contains("wooden spoon"); 
+ --> CHERRY WOODEN SPOON
+ --> "cherry WOOden SPoon".toUpperCase().contains("WOODEN SPOON"); 
+
+
+
+ String str="Handcrafted Wooden Masala Box With 9 Containers plus 1 Spoon Free Wooden Multi Utility Box, Spice Rack"; 
+
+ if(str.toLowerCase().contains("wooden") || str.toLowerCase().contains("spoon")){
+
+ 		sout("display"); 
+
+ }
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

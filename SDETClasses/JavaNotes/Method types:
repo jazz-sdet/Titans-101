@@ -1,0 +1,61 @@
+Method types:
+	- void
+If method is marked as "void", it means that the method will not be returning any value, the computation will end in the method.
+	- non-void
+We specify the return data type in the method signature, and our method MUST end with "return" keyword and some value (the same data type that we have specified in method signature).
+	e.g.:
+		public long getLongValue() {
+			return 100000000000000; -> since we have specified the long return type we are 
+										required to put "return" keyword
+		}
+public -> access modifier
+long -> return type
+getLongValue -> method name
+() -> empty method paramter
+1. Create a method with int return type
+2. Method should get 2 parameters and find out the smallest number(if the numbers are equal, return either of them)
+3. In main method use the value returned from the method and find out if it's odd or even number
+Swap numbers:
+int a = 5;
+int b = 10;
+a = 10;
+b = 5;
+solve it without using temp number.
+Process of creating object out of a class called instanciating a class (creating instance of a class).
+
+
+
+
+Methods:
+	1. We cannot have 2 or more methods with the same name in one class.
+Component of method:
+	While creating a method we should pay attention to following components:
+		- accessModifier (public)
+		- returnType (void)
+		- method name
+		- method body (everything between opening and closing curly braces)
+public void myCoolMethod(){
+}
+public -> access modifier
+void -> return type
+myCoolMethod -> method name
+{} -> method body
+Components all together are called - method signature.
+We can put some rules while creating a method, like every service has.
+Adding a parameters/arguments to a method will make the method more flexible.
+the parameters/arguments are added inside of paranthesis after method name:
+e.g.
+	public void myCoolMethod(String name){
+	}
+		public -> access modifier
+		void -> return type
+		myCoolMethod -> method name
+		String name -> method paramter
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+
+C2C(contract) You pay your tax, W2(contract) they pay the tax for you and reduce this amount from your salary, Full Time(insurance, PTO, Retirement investment(401K))
+================================================
+W2-> 45$ --> 90K
+C2C --> 50$
+Full Time -- 90K or 95K
+==================================================
+
+full time --> Vendor company (Globallogic) --> 15PTO --> 95K
+full time --> direct client (Walgreens) --> 20PTO --> 95K
+
+==================================================
+Entry Criteria for Testing
+1- Business requirement should be approved and ready. 
+2- We need to have partial or complete testable code
+3- Test Data 
+	Hospital data
+	 -- 
+	 No Data
+	 null
+	 N/A
+	 ^ 13 --> arrow color is green 
+	 > 9  --> arrow color is red
+	 * 10 --> star color is yellow
+ a- You can setup your own data	 (you have create hospital button then you need to setup the data according to the your test case scenarios)
+ 	- first create the hospital
+ 	- Validate your test cases 
+ 	- delete your data 
+ b- You might get this data from production environment
+ 	- Developer is pulling this data from production environment to the dev environment and to the test environment
+4- Test Cases
+	* we will start writing tc in the beginning of the sprint. 
+	(We can write the TC in Excel file or Zephyr(it is one of the plugin in jira))
+	Main Part for TC: 
+	a-) TC ID/NAME
+	b-) Description
+	c-) Steps 
+	d-) Expected result
+	e-) Attachments
+	f-) Related user story
+	g-) ProjectName, Sprint Name
+	h-) Priority
+	i-) Test Data
+
+	Bitbucket + Zephyr ==> Once you push your code to the bitbucket you need to give testcase id as comment.
+
+5- Environment should be ready
+	www.facebook.com --> url for production environment
+	www.test.facebook.com --> url for test env
+	www.dev.facebook.com --> url for dev env
+	www.sit.facebook.com --> url for sit(System Integration Team) environment
+	www.dev.facebook.com
+	localhost:4200
+
+
+
+	dev --> developer will write the code and test their own code in this environment. (Unit testing is in this environment)
+	test --> Software testers is doing testing in this environment. (Scrum Team)
+	sit --> SIT(System Integration Team) is doing testing in this environment
+	uat --> User Acceptance Testing. It is before the production environment after sit 
+	Staging environment --> it is right before the production environment.
+	Production environment 
+
+
+1- Manager is the person who is responsible from the team and the application. 
+2- Product owner is the person who is responsible from the application. At the end of your sprint, you need to do demo to the product owner. If the product owner approves the user story, then you will move it to the Team Complete Status(DONE)
+
+In Progress --> Testing ---> Team Complete(DONE)
+
+
+EXIT CRITERIA (When we can stop testing?)
+1- All critical test cases are covered
+2- The application is working functionally
+3- Fixing all high priority defects
+4- Closing all high severity defects
+5- If there is no budget for testing 
+
+What is the difference between priority and severity in bug? 
+Priority --> when we are going to finish this job is related with the priority. 
+ - High, medium and low priority
+Severity --> How much this bug is effecting the application? 
+ low, high 
+
+David M. Hunt
+David Hunt
+David  Hunt
+David Marcus Hunt
+
+-----------------------------------------------
+
+Test Plan 
+Softaware Test Engineer Lead will prepare the test plan. 
+* Tools
+* Strategies to test the application
+* Required resources 
+* Time estimation
+
+-----------------------------------------------
+Smoke Testing 
+I am running smoke testing every morning at 6am to make sure application is up and running. if there is any issue we inform the developers to fix the issue. It will help us to reach maximum productivity at job. We are running the smoke test using jenkins.
+
+50 * 50 * 2
+2500* 2 = 5000
+
+---------------

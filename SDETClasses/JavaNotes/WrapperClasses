@@ -1,0 +1,61 @@
+Wrapper Classes
+byte --> new Byte(10); 
+short --> new Short(20); 
+int --> new Integer(50); 
+long --> new Long(5000); 
+double --> new Double(10.3); 
+float --> new Float(3.2f); 
+char --> new Character('c');
+boolean --> new Boolean(false); 
+
+====================================
+Converting String to primitive data type:
+We need to use the parse method to convert string to primitive data type.
+"5" --> int num=Integer.parseInt("5");   
+
+While using the parse method we need to provide correct values for primitive data type. Instead of num if you give the letters, while parsing the string value, java will throw numberformatexception.
+When you parse String to boolean, String should be "false" or "true". If it is different value, java will assign default false in your implementation. 
+
+product 1 = 5$
+product 2 = 6$
+product 3 = 7$
+
+"5" and "6" and "7"
+"5"+"6"+"7"= 567
+18$
+
+jar=523:/App4licat32ons/I34ntelliJ IDEA CE.app3/Cont6ents/9bin
+
+From given string value find sum of all digits. 
+
+String to Wrapper class objects: 
+To convert string to wrapper class object we need use the valueOf() method. 
+
+=================
+What is the Difference between Array and ArrayList? 
+Array
+1- fixed size 
+2- It has no method
+3- We can store primitive data types and object
+
+ArrayList
+1- not fixed size
+2- has method
+3- we can only store the object
+
+
+("Turan", "David","Kushal","Priyanka")
+
+"Turan"
+"David"
+"Kushal"
+"Priyanka"
+===========================
+ArrayList Methods
+
+ArrayList object=new ArrayList(); 
+NOTE: if you are not defining any data type for your arraylist, the data type will be Object by default. It means that I can store any value inside my arraylist. 
+add() --> will add the value inside the arraylist. 
+
+
+

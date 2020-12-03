@@ -1,0 +1,50 @@
+  public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please enter state name: ");
+        String stateName=input.next();
+
+        //final String il="Illinois";
+        stateName=stateName.toLowerCase();
+
+        switch (stateName){
+
+            case "illinois":
+                System.out.println("Please provide city name: ");
+                String cityName=input.next().toLowerCase();
+
+                switch (cityName){
+                    case "chicago":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName);
+                    break;
+                    case "elgin":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName);
+                        break;
+                    case "rosement":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName);
+                        break;
+                }
+                break;
+
+            case "california":
+                System.out.println("Please provide city name: ");
+                input=new Scanner(System.in); // to be able use the nextLine, we reassign the Scanner one more time.
+                String cityName1=input.nextLine().toLowerCase();
+                switch (cityName1){
+                    case "los angeles":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName1);
+                        break;
+                    case "san francisco":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName1);
+                        break;
+                    case "san diego":
+                        System.out.println("The provided state name is "+stateName+" and city is "+ cityName1);
+                        break;
+                }
+                break;
+
+
+
+        }
+
+
+    }

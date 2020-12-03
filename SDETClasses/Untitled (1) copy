@@ -1,0 +1,55 @@
+
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please enter String value: ");
+        String str=input.nextLine();
+        // loop
+        System.out.println("Please enter the char: ");
+        char ch=input.next().charAt(0);
+        // o
+        int count=0;
+        int index=str.length()-1;
+
+        do{
+            if(str.charAt(index)==ch){
+                count++;
+            }
+            index--;
+
+        }while (index>=0);
+
+        System.out.println("First do-while loop "+count);
+
+        // SAME TASK DO USING DO-WHILE LOOP
+        // test
+        count=0;
+        int indexNumber=0;
+        do{
+
+            if(str.charAt(indexNumber)==ch){
+                count++;
+            }
+            indexNumber++;
+        }while (indexNumber<=str.length()-1);
+
+        System.out.println("Second do-while loop result: "+count);
+
+
+
+        
+        indexNumber=0;
+        String allMatchingChar="";
+        do{
+
+            if(str.charAt(indexNumber)==ch){
+                allMatchingChar+=ch;
+            }
+            indexNumber++;
+        }while (indexNumber<=str.length()-1);
+
+        System.out.println("Third do-while loop result: "+allMatchingChar);
+        System.out.println(allMatchingChar.length());
+
+
+    }

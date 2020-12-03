@@ -1,0 +1,83 @@
+Wrapper Classes
+String to primitive Data type
+String str="123"; 
+int num=Integer.parseInt(str); 
+
+String bl="true";
+boolean bl1=Boolean.parseBoolean(bl);
+
+String to Wrapper Class Object
+String str="345"; 
+
+Long ln=Long.valueOf(str);
+
+=======================================
+ArrayList
+add(Element); 
+add(indexNumber, element); 
+get(indexNumber); 
+isEmpty()
+Clear()
+set(indexNumber, element)
+contains(element); 
+size()
+equals(otherArrayListRefName) --> if two arraylist is equals to each other with their order, this method will return true 
+remove(element); 
+remove(indexNumber); 
+====================================
+Array to List
+asList() method. 
+--> Arrays.asList(arrayRefName)
+--> Arrays.asList("one","two","three"); 
+--> Arrays.asList(34,44,54,64);
+
+List <Integer> numbers=Arrays.asList(34,44,54,64); --> asList() method returns List. 
+ArrayList <String> numbers=Arrays.asList("one","two","three"); --> it will give compile time error since asList method returns the List. 
+
+NOTE: After converting array to list, the list will be fixed size. We can not add new element or we can not remove the element from the List. However, we can use the set method.
+
+List to Array
+ArrayList <String> processor=new ArrayList(); 
+processor.add("intel"); 
+processor.add("AMD"); 
+
+NOTE: we use toArray() method to convert ArrayList to Array. ToArray() method return Object array. 
+
+Object [] pr=processor.toArray();
+
+================================
+ArrayList Sorting
+
+Collections.sort(nameOfArrayList); 
+NOTE: sort method will sort the ArrayList in ascending order. 
+
+Instance and Static initializer blocks
+
+Instance Initialization Block
+We use this block to give the value our instance variables. Instance block will run for every object. 
+
+{ } --> it is instance Initialization block
+
+Static initialization Block
+We use this block to give the value our static variables. Static block will run only one time. 
+
+static { } --> Static initialization Block
+
+NOTE: Instance block will run before every object. Static block will run one time before everything in class. 
+Order Of Initialization: 
+1- Static block
+2- Instance block
+3- Constructor
+
+Difference between .equals method and == sign
+
+Access Modifier
+
+Encapsulation
+
+Immutable Classes
+
+
+
+
+

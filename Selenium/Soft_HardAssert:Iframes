@@ -1,0 +1,206 @@
+StaleElementException
+1- The element on the page is refreshed (Click Here --> Clicked)
+2- If you open the new page and come back to the main page, it might give the stale element exception
+
+Windows/Tab
+
+driver.getWindowHandle() --> String id of the current page
+driver.getWindowHandles() --> It will return all tha ids of the opened page in Set<String> format.  
+
+driver.switchTo().window(id); 
+
+ONE WAY
+
+for(String id: ids){
+	
+	if(!id.equals(CurrentId)){
+
+		driver.switchTo().window(id); 
+
+	}
+}
+
+Switch With Title 
+
+for(String id: ids){
+	
+	if(!driver.getTitle().equals(expectedTitle)){
+
+		driver.switchTo().window(id); 
+
+	}
+}
+
+IFRAME
+
+Iframe is the html inside html. Driver can handle only one html at the time. We need to switch the driver to the another html if we want to do execution. 
+
+<html> 
+	<head>
+	</head> 
+
+	<body>
+
+		<h3> header text </h3> 
+
+		<iframe>
+		<html> 
+				<head>
+				</head> 
+
+				<body>
+				</body>
+		</html>
+		</iframe>
+
+	</body> 
+
+</html> 
+===============================================
+<html> 
+	<head>
+	</head> 
+	<body>
+		<frames>
+		<frame>
+		<html> 
+				<head>
+				</head> 
+
+				<body>
+				</body>
+		</html>
+		</frame>
+		<frame>
+		<html> 
+				<head>
+				</head> 
+
+				<body>
+				</body>
+		</html>
+		</frame>
+		</frames>
+	</body> 
+</html> 
+
+===========================================================
+How many different ways we can switch the frame? 
+1- id
+2- name
+3- index
+4- WebElement
+
+driver.switchTo().frame(id); 
+driver.switchTo().frame(name); 
+driver.switchTo().frame(index); 
+driver.switchTo().frame(webelement); 
+
+
+DEFAULTCONTENCT() METHOD: 
+
+defaultContent() method switch back to your main html on the page. 
+driver.switchTo().defaultContent();
+
+PARENTFRAME() method:
+When we use the nested frames, we can use the parentFrame() method to switch to parent frame. Parent frame will go one previous frame on the DOM. It will not go to the your main html. 
+driver.switchTo().parentFrame();
+
+<html> 
+	<frame name="parentFrame"> <html>
+				<frame name="first"> <html>
+
+				</html> </frame> 
+
+				<frame name="second"> <html>
+
+				</html> </frame> 
+	</html> </frame> 
+</html>
+1- go inside first frame
+	driver.switchTo().frame("parentFrame"); 
+	driver.switchTo().frame("first"); 
+
+2- To be able to switch from first frame to second frame using parent frame
+	driver.switchTo().parentFrame(); 
+	driver.switch().frame("second"); 
+	
+3- To be able to switch from first frame to second frame using default content
+	driver.switchTo().defaultContent();
+	driver.switchTo().frame("parentFrame"); 
+	driver.switch().frame("second"); 
+
+<html>
+				<frame name="first"> <html>
+
+				</html> </frame> 
+
+				<frame name="second" > <html>
+
+				</html> </frame> 
+</html>
+
+1- go inside first frame
+	driver.switchTo().frame("first");
+
+2- To be able to switch from first frame to second frame using default content
+	driver.switchTo().defaultContent();
+	driver.switch().frame("second"); 
+
+Possible Interview Questions related with Frames? 
+1- What is iframe/frame? 
+2- How many different ways you can switch to iframe? 
+	1- id/name
+	2- index number (starts with 0)
+	3- webelement
+3- How do you switch back to the main html? 	
+	- defaultContent()
+4- What is the difference between defaultContent() and parentFrame()? 
+	defaultContent() --> it will return back to your main html 
+	parentFrame() --> we use it if we have nested frame and it will go to the parent frame. 
+
+=========================================================
+
+https://skpatro.github.io/demo/iframes/ navigate to given url and click category1 button and print the title of the page
+
+then click category3 button and print url of the page. 
+
+
+=========================================================
+
+HARD ASSERT and SOFT ASSERT (Assertion and Verification)
+Hard assert will fail right away and throw the exception. Next line will not be executed. For hard assert we are using Assert.assertEquals()
+Assert.assertTrue()
+Assert.assertFalse()
+assertEquals(); 
+
+Soft assert will keep continue to execute from the next line after it is failed. We have one SoftAssert class in TestNG for soft assert executions.
+
+SoftAssert softAssert=new SoftAssert(); 
+softAssert.assertEquals(actual, expected); 
+
+softAssert.assertTrue(false); 
+
+
+softAssert.assertEquals(actual, expected); 
+
+softAssert.assertAll(); we use it at the end of all verifications. It will throw the exception if one of the verification is failed. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

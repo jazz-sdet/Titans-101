@@ -1,0 +1,88 @@
+HTML / CSS 
+
+HTML (HyperText Markup Language)
+
+<html> --> openning tag
+
+
+</html> --> closing tag
+
+
+We need to save the html file with .html extension. 
+
+
+<h1> </h1> --> Openning and closing tag
+
+<h2> October 11, 2020 </h2> --> Web Element
+
+
+TAGS
+<html> 
+<head> 
+<title> 
+<h1> ... <h6> 
+<br> --> break. it will put new line between the texts
+<hr> --> it will create one horizontal line on the page
+<p> --> paragraph. We use <p> tag for longer text. 
+<strong> --> makes the text bold 
+<i> --> makes the text italic format
+<img width="100" src="filelocationforimage"> 
+<a href="links" target="_blank"> CLICK </a>
+<div name="anything"></div> --> this is for group of webelements
+<blockquotes> --> it will create separate text from other text to show our quotes. 
+<label></label> --> we use it to display the title of input
+<input type="text/email/password" name="anything" placeholder="any text to display inside the text box"> --> we can provide the value inside the text box using input tag
+<button>click</button> --> it will show the clicable button on the page. 
+
+TABLE 
+<table>
+	<tbody>
+	<tr>
+		<td>FirstName</td> 
+	</tr>
+	</tbody> 
+</table>
+
+LIST
+
+UnOrdered List
+<ul> --> un-ordered list. 
+	<li>item 1</li>
+	<li>item 2</li>
+</ul> 
+
+
+Ordered List
+<ol>
+	<li>David</li>
+	<li>John</li>
+</ol>
+
+
+
+CSS stands for (Cascading Style Sheet) 
+
+1- Inline Style
+style="" --> we need to use style attribute for inline style css. 
+2- Internal Style
+
+3- External Style 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

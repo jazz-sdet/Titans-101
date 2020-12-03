@@ -1,0 +1,114 @@
+
+arr = {1,  45, 333, 8 }
+
+1*100= 100+45 = 145
+
+145 * 1000= 145000 + 333 = 145333* 10 + 8 = 1453338 
+
+int result=arr[0]; 
+
+for(int i=1;i<arr.length;i++){
+	
+	int count=0; 
+	int num=arr[i]; 
+	int mult=1; 
+
+	while(num>0){
+
+		num/=10; 
+		count++; 
+	}
+
+	// count = 2; 
+	for(int i=0;i<count;i++){
+		mult*=10; 
+	}
+
+	// mult=100; 
+
+		result*=mult+arr[i]; 
+
+}
+
+
+return result; 
+
+
+==========================================
+
+1)
+int [] number=new int[6]; 
+number[4]=8; 
+number[2]=5; 
+number[9]=4;  --> it will give runtime error
+
+2)
+String [] names={"David","John","Jessica"}; 
+
+3)
+String [] letters=new String[]{"aa","bb","cc","dd"}; 
+
+
+================================
+Arrays.toString(nameOfArray); --> it will return the String as arrays element. 
+
+Arrays.sort(nameOfArray); --> it returns the array with ascending sorted values. 
+
+Arrays.binarySearch(nameOfArray, searchValue); --> if the searchValue is available inside the array, binary search method returns index number of searchValue. If the searchValue is not exist inside the array, binarysearch method will return the expected location of the searchValue with negative result. Before using the binary search method we need to sort the array.
+
+
+int [] arr= {3445,3,3,6,2,6,2,7,3,342,47,567,53,23,4543,45678,2356,34}; 
+
+		if(Arrays.binarySearch(arr, 34)>=0){
+		sout("true"); 
+		} 
+
+for(int i=0;i<arr.length;i++){
+	
+	if(arr[i]==34){
+
+	sout("true"); 
+	break; 
+	}
+}
+
+================================================
+
+What is the differences between binary search and linear search? 
+
+Linear Search: 
+int [] arr= {3445,3,3,6,2,6,2,7,3,342,47,567,53,23,4543,45678,2356,34}; 
+
+Binary search: 3
+3
+int [] arr= { 3,5,7,8,9,12,34, 54 ,65,88,99,187,13453,43534, 234235}; 
+
+NOTE: Binary search will divide the elements of the array from the middle everytime and will take a look at the search value on the right side or on the left side. Then it will continue this process until finding searchvalue.
+
+1 mil element in array for last value linear search will run 1 mil times to find your search value. Binary search will only run 21 times. 
+
+=================================================
+Split method
+Split method is coming from String class. This method takes the parameter to divide the string in to the different element according to given regex(Regular expressions) parameter and returns String array. 
+
+foreach loop
+
+MultiDimentional Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

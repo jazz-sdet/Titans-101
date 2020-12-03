@@ -1,0 +1,35 @@
+  do {
+            int chance=3;
+
+            if (actualUserName.equals(expectedUsername) && actualPassport.equals(expectedPassport)) {
+                System.out.println("ypu are logging in please wait");
+                isCorrectusernameandpassporrt=true;
+            } else {
+                while (countOfLogIn < 3) {
+                    System.out.println("you hace"+ chance +"times more chance");
+                    --chance;
+                    System.out.println(" user name or passport is wrong please try again ");
+                    System.out.println("please provide your user name");
+                    actualUserName = scanner.next();
+                    System.out.println("please provide your passport");
+                    actualPassport = scanner.next();
+                    ++countOfLogIn;
+                    if (actualUserName.equals(expectedUsername) && actualPassport.equals(expectedPassport)) {
+                        System.out.println("you are logging in please wait");
+                        isCorrectusernameandpassporrt=true;
+                        break;
+
+                    }
+                    if (countOfLogIn%3==0&&(!isCorrectusernameandpassporrt)) {
+                        System.out.println("your account is held");
+                        //Thread.sleep(50000);
+                    }
+                }
+            }
+
+        }while (!isCorrectusernameandpassporrt);
+
+
+
+    }
+}

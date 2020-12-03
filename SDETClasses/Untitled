@@ -1,0 +1,127 @@
+--------
+int studentNum=15; 
+
+byte sNumber=(byte)studentNum; --> If we don't cast the int value to the byte, it will give compile time error. 
+
+byte sNumber1=(byte)(studentNum+5.3);
+
+double micPrice=50.99; 
+short microPrice=(short)micPrice;
+=======================================================
+
+UNARY Operators(++ and --)
+Unary operator increase/decrease the number with 1. 
+int number=50; 
+
+Pre Unary Operator: ++number or --number --> While using the pre unary operator, first the number will increased/decreased then we can use implemented number. 
+Post Unary Operator: number++ or number-- --> while using the post unary operator, first we will get the original value then in next step or next line we can use increased or decreased number. 
+
+  int x=4;
+  int y=3;
+
+
+int z= 4 + 3 / 2 * 6 % 3 - 3; 
+x=6
+y=2
+
+sout(x); 6
+
+sout(y); 2
+
+sout(z); 
+
+======================================
+
+int k=6; 
+
+int l=4; 
+
+int result= ++l+k%k++ - 4 * ++k-++l/k--;
+
+l=
+k=
+sout(l); 
+sout(k); 
+sout(result); 
+
+=======================================
+int k=6; 
+
+int l=4; 
+
+double result= 5+0 - 32-6/8;
+
+l=6 
+k=7
+
+sout(l); // 6
+sout(k); // 7 
+sout(result); 
+
+=============================
+
+Logical Negation (!)
+1- We can only use for boolean values. 
+2- Once we use (!) it will make the boolean value reverse. 
+
+===========================
+
+Comparison Operators ==, !=, > , < , >= , <= 
+NOTE: we can not use comparison operator more than one time in a row
+
+// (myBalance>=housePrice>100_000) --> compile time error since we use the comparison operator more than one time. 
+
+===========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

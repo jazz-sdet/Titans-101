@@ -1,0 +1,45 @@
+Object
+Constructors
+Methods
+Collections
+	ArrayList
+	Set
+	Map
+OOP Concepts
+	Inheritance
+	Abstraction
+	Polymorphism
+	Encapsulation
+Exceptions
+
+-----------
+
+Procedural Oriented Programming languages -> POP -> C language
+
+OOP -> Object Oriented Programming language
+Java, Python, JavaScript, C++...
+
+public class Object {
+	
+}
+
+Method Overridding:
+-> We use Override annotation in order to make sure we override the method
+-> Method signature has to be same
+-> Once we call the method it will execute the last overriden method
+
+
+
+By default each class:
+1. Extends Object class
+2. Having no argument constructor
+3. Constructor calling super class's no argument constructor with 'super()'
+
+
+super(); -> will call super class's constructor
+
+Constructor rules:
+-> Sub class constructor will call no-argument constructor of super class by default
+-> But if it doesn't have no-argument constructor in super class, we will need explicitly call any argument constructor from super class
+-> Once we use 'super()' it has to be first statement.
+

@@ -1,0 +1,68 @@
+Advantages Of Selenium 
+1- Free and open source()
+2- multiple programming language like Phyton, Java, C#, C++
+3- It works with different browser like Chrome, Firefox, Edge, Opera
+4- It has huge community
+
+Disadvantages of selenium 
+1- We can not automate the pictures
+2- We can not automate the captcha
+3- Learning curve is not easy. 
+4- They don't have any technical support 
+5- It has no reporting tool. We need to third party tools for reporting like (cucumber html report, testng report, extends report etc)
+
+
+=========================
+You need to follow following steps once you create new project for selenium 
+
+1- Create one Java Project
+2- Download Selenium jar files from selenium website
+3- Download the chromedriver with latest version of chrome 
+4- Add jar files to the Java project (File > Project Structure > Module > Dependencies > Plus Button)
+5- Drag and drop the chrome driver into the project
+
+
+DOM --> Document Object Model --> refers the HTML 
+
+Locators --> We have 8 locators in Selenium to be able to identify the unique element on the page. 
+1- id
+2- name
+3- class name 
+4- link
+5- partial links
+6- tagname 
+7- css selector
+8- xpath
+
+NOTE: Css is faster than xpath but xpath has more function to find the dynamic elements. 
+
+Find Element Method 
+This method returns the WebElement from the page. 
+
+WebElement button=driver.findElement(Locators);
+
+FOR DEVELOPMENT TOOL
+option+command+i --> for mac
+shift+control+i --> for windows
+
+Search Box in Development Tool
+command+f 
+or
+control+f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

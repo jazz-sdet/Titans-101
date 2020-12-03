@@ -1,0 +1,202 @@
+
+
+int number=1234; 
+
+if(number>=1230 && number<1234){
+
+System.out.printlng("Hello World"); 
+
+}
+
+double myBudget=2000; 
+double phonePrice=850; 
+double rentAmount=1500; 
+
+850+1500= 2350
+
+2000>=2350 = false
+
+if(myBudget>= (phonePrice+rentAmount)){
+	
+	sout("You can buy the phone");
+
+}
+
+
+NOTE: Curly braces are required if you have multiple lines of code after if condition. If you don't have curly braces if condition only affect next line. In this case, Other lines will be executed every time if u don't have curly braces. 
+
+int k=10; 
+
+if(k>6)
+	sout(k); --> 10 
+	sout("K is bigger than 6"); 
+
+=====================================
+int k=5; 
+
+if(k>6)
+	sout(k); --> There will not be any output for this line since my boolean condition is false
+	sout("K is bigger than 6"); --> will be executed every time because it does not depend to the if condition
+
+===================================
+int k=5; 
+
+if(k>6){
+	sout(k); --> 
+	sout("K is bigger than 6"); 
+}
+==================================
+
+= --> it is assignment operator 
+== --> comparison operator
+>=
+<=
+!=
+>
+<
+
+
+'c' > 'b'
+
+char letterC='c'; 
+
+
+===============================
+
+TASK: 
+Using Scanner ask user to enter 2 exam score and Percentage of the attendance to the class
+
+If the average of exam score is more than 80 and attendance is bigger than 85 percent 
+print "You pass the class." 
+
+=============================
+
+else statement: If we are getting false in if condition, else statement will be executed. Else statement can not be before the if condition. 
+
+=============================
+
+NOTE: local variables should be initialized before using them. Once you create the variable inside if statement or main method method, you can not use them outside of the curly braces. 
+
+
+
+int t=4; 
+
+if(t>4)
+	t++; // it will not be executed
+	t++; // it will be executed, since we don't have curly braces
+
+	sout(t); 5
+
+==============
+int t=4; 
+
+if(t>4){
+	t++; // not executed
+	t++; // not executed
+}
+
+sout(t); 4
+
+
+===========================================
+
+ELSE IF STATEMENTS
+
+
+If You have more than 1500$ buy Galaxy Z
+If you have more than 1000$ but less than 1500$ buy Iphone 11
+if you have more than 350$ but less than 1000$ buy Google Pixel 
+else don't buy anything else. 
+
+
+int myBalance=1560; 
+
+
+if(myBalance>1500){
+	sout("Galaxy Z"); 
+}
+
+
+if(myBalance>1000 && myBalance<1500 ){
+	
+	sout("Iphone 11"); 
+}
+
+if(myBalance>350 && myBalance<1000){
+	
+	sout("Google Pixel"); 
+}
+
+if(myBalance<350){
+	sout("Dont by anything"); 
+}
+
+
+===========================
+
+Using scanner ask user to enter average score
+
+if the score is bigger than equals to 85 print A
+if the score is bigger than equals to 75 but less than 85 print B
+if the score is bigger than equals to 65 but less than 75 print C
+If the score is bigger than equals to 55 but less than 65 print D
+if the score is bigger than equals to 45 but less than 55 print D--
+in any other conditions print FF 
+
+===========================
+
+TASK: 
+
+From furniture store, we want to buy the student desk. 
+
+When you buy the 10 or more table the store will do 10 percent discount 
+If you buy less than 10 and more 5 table the store will do 5 percent discount 
+If you buy 5 or less than 5 but more than 1 table the store will do 3 percent discount 
+for all others condition the desk price will remain same amount. 
+
+Using scanner ask the number of the desk and desk price and print total amount which I need to pay. 
+
+How many desk the user wants to buy? 
+and 
+What is the unit price for desk? 
+
+===================================================
+NESTED IF CONDITION
+We can use if statement inside another if statement.
+It is called nested if statement
+If first if statement boolean condition is true then next if statement will be executed
+
+if(booleanCondition){
+	
+	if(booleanCondition){
+
+		if(booleanCondition){
+		
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+Collection - is a concept to store many similar data in one place.
+Array is able to store similar info in one place, it is one type of collection. HAs defined size and cant be resized, can store primitive and object. 
+
+
+====================ARRAYLIST========================
+is another type of collection which can store similar data in one place.
+------ArrayList can store only objects, NO PRIMITIVE DATA TYPE-----------
+CAN BE RESIZED
+
+ArrayList<Base_Type> name = new ArrayList<Base_Type>();
+--------------------------------^is CONSTUCTOR^^^^-----
+
+Arrayslist<String> name = new Arraylist<String>(10); -->10 IS CAPACITY
+HOWEVER YOU DONT HAVE TO GIVE ANY CAPACITY, BUT BY DEFAULT IT HAS INITIAL CAPACITY OF 10.
+
+------------------ARRAYLIST METHODS-------------------------------
+add(type element)-->Adds the element to the end of this list
+get(int index)----->Returns the element at the specified position.
+contains(Object element)-->Returns true IF element in this list; otherwise,  ---------------------------returns false
+indexOf(Object element)-->Returns the index of the first occurence of 								  element in this line.
+clear()---> Removes all elements from this list.
+size()----> Returns the number of elemenets in this list.
+remove(int index) Removes the element at the specified index of this list
+isEmpty()--->Returns true if this list is empty; otherwise returns false.
+
+
+
+
+
+
+
+
+
+for(int i=0; i<products.length; i++){
+            if(products[i].equals(productName)&& inventory[i]>0){//we are checking if users input is equal to any of our products list, and if its available in inventory and its price.
+                System.out.println(productName+" is available, we have "+inventory[i]+" in stock, and the price is "+getProductPrice(productName));
+
+            } System.out.println("Enter a product name: ");
+                scanner=new Scanner(System.in);
+                String str=scanner.next();
+                Products.selectProduct(str)
+
+
+
+                having the same parameters and the same method name but different access modifier is already not method overloading right?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

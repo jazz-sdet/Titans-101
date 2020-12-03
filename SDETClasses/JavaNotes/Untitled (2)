@@ -1,0 +1,36 @@
+package ArrayPractice;
+
+import java.util.Arrays;
+
+public class FlipImage {
+
+    public static void main(String[] args) {
+
+        int [][] image={{346,23,24},{546,32,23,7},{456,3,27,54,234,3}};
+
+        for(int i=0;i<image.length;i++){
+
+            for(int k=0;k<image[i].length/2;k++){
+                int temp=image[i][k]; // 346
+                image[i][k]=image[i][image[i].length-k-1];// 24
+                image[i][image[i].length-k-1]=temp; // 346
+            }
+
+        }
+
+        System.out.println(Arrays.toString(image[0]));
+        System.out.println(Arrays.toString(image[1]));
+        System.out.println(Arrays.toString(image[2]));
+
+        int [][][] numbers= {{{34,22,11},{45,33},{345,457,56}},{{567,4,52},{456,568,32,4,36}}};
+        
+        for(int i=0;i<numbers.length;i++){
+            for(int k=0;k<numbers[i].length;k++){
+                for(int l=0;l<numbers[i][k].length;l++){
+                    System.out.println(numbers[i][k][l]);
+                }
+            }
+        }
+
+    }
+}

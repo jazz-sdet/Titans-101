@@ -1,0 +1,74 @@
+planning
+analyzing
+desining the app based on the busness requirements of stake holders.
+Implementation,where actual work starts. Developers develop
+Testing and integration
+Maintanence maintain the existing app which is already integrated to keep up with the quality or sometimes add some new features and functionality.
+
+Smoke testing is done daily by testers to check the main functuanalities. Such as sign in functionality.
+
+Unit testing is done by developers based on internal structures of the code,it is related to development process.
+
+Integression testing is when partionally work on funcinlties and bring them together.
+
+Regression testin is done when new funcionalities done
+
+Monkey testin- is random test
+
+PERFORMANCE Testing is speed, capacity, stability performance test.
+
+------------------What is Testing--------------------
+It is the process of critical analysis to identify and evaluate whether the developed code
+
+Testing Cycle---------------------
+
+Requirements review --is a documentations, plans and expectations r written
+
+Test Plannin--its what framwork, tools, language will be used discussion
+
+Test Cases-- positive/negative test case at least 6 test cases 3/3
+
+TEST Environment Setup -- building the framework, picking the language, tools, adding dependencies in maven class files.
+
+Test Runs-- running the test cases that is already written.
+
+Test Reporting-- reporting test cases, hw many cases failed hw many passed.
+
+
+
+
+
+-----------------------Test strategy--------------
+-is a plan for defining the approach to the stlc.(software testing life cycle)
+The Test Strategy document answers  questions like what u wan to get done and how are you goin to accomplish it.
+
+-------------TESTIN TYPES MANUAL AND AUTOMATED
+Man test is done by human
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

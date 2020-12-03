@@ -1,0 +1,118 @@
+Warm Up Task: 
+Create one array with 8 different numbers and find total number of elements which is bigger than 10 and less than 30 
+
+15,33,6,2,74,25,9,84
+
+Array
+1- Array is fixed size
+2- Inside the array you can store primitive data types and object. 
+3- Array is an object. 
+4- We can store duplicate values inside array
+
+
+Math Class    and     Computer Class
+10 + 10               10 + 10 
+
+10 student is taking math class and computer class at the same 
+If you are calculating the number of student ?
+30 
+Calculate the total payment of students? Each class is 5K? 
+40 * 5
+
+-----------------------------
+We need to provide the data type while creating the array. 
+int [] nums=new int[5]; 
+nums[4]=10; 
+nums[3]=2; 
+
+{0,0,0,2,10}
+
+
+-------------------------------
+
+String [] phones={"10x","7S","Note10",null, "10X plus",null,"Galaxy"}; 
+
+
+==================================
+Third way to create an array: 
+
+double [] prices=new double[]{12.5, 33.2, 13.3, 0.0, 123.8,0.0,743.3 }; 
+
+The phone name is 10x and the price of the phone is 12.5. 
+
+==============================================
+TASK: 
+14,21,6,5,74,25,9,84,16
+Find the numbers which is sum of 30. 
+
+14 + 16 = 30 
+21 + 9 = 30 
+5 + 25 = 30 
+
+Array Sorting 
+sort(arrayName) method which is coming from Arrays class. This method takes one prameter as Array, then it will sort given array in ascending order.  
+
+int [] test={14,21,6,5,74,25,9,84,16}; 
+
+Arrays.sort(test); 
+
+sout(Arrays.toString(test)); 
+[5,6,9,]
+
+
+[4.0, 5.3, 6.2, 9.4, 235.4, 9723.32]
+
+new array
+
+[9723.32, 235.4, 9.4, 6.2, 5.3, 4.0]
+
+==================================
+
+int [] nums={2,3,6,7,9};
+
+nums[0]=7; 
+nums[1]=3; 
+
+int temp=0
+if(nums[0]>nums[1]){
+	temp=num[0]; // 7
+	num[0]=num[1]; //3
+	num[1]=temp; //7
+}
+
+
+==========================================
+
+BinarySearch(); 
+NOTE: Binarysearch method will give you the position of provided element in array. If you don't have given value inside your array, binary search method will return expected position of given value in negative output. 
+
+Before using binarysearch() method, first we need to sort our array. 
+
+Binarysearch method takes two parameter one of them is name of the array and another one is the value which you are searching inside the array. 
+
+int [] nums= {3,5,6,100,30,55}; 
+
+Arrays.sort(nums); 
+
+{3,5,6,30,55,100}
+
+Arrays.binarySearch(nums, 30); --> return the index number of given value (3)
+
+Arrays.binarySearch(nums, 43); --> -5
+
+Arrays.binarySearch(nums, 66); --> -6
+
+Arrays.binarySearch(nums, 8); --> -4
+
+Arrays.binarySearch(nums, 100); --> 5
+
+
+==================================
+
+SORTING AN ARRAY WITHOUT SORT METHOD
+MISSING NUMBERS
+SUM OF GIVEN VALUE IN ARRAY
+LARGEST VALUE 
+SMALLEST VALUE 
+REVERSING STRING, COUNTING
+

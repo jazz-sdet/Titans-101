@@ -1,0 +1,59 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-01T03:14:30.108Z",
+        "line": 23,
+        "name": "Positive test to get star war people",
+        "description": "",
+        "id": "api-status-code-testing;positive-test-to-get-star-war-people",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1515000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user creates get request by using path vehicle",
+            "match": {
+              "location": "stepDefs.Api_Films_Defs.user_creates_get_request_by_using_path_vehicle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user gets the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefs.Api_Films_Defs.user_gets_the_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@starwarVehicle"
+          }
+        ]
+      }
+    ],
+    "name": "API status code testing",
+    "description": "",
+    "id": "api-status-code-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api_films.feature",
+    "tags": []
+  }
+]

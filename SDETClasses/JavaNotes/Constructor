@@ -1,0 +1,103 @@
+
+
+1. From main method make a single call to method#2
+2. From method#2 make a call to method#3
+3. From method#3 make a call to method#4
+4. From method#4 make a call to method#5
+We can call methods not only from main method. Methods can be called from another methods(other than main).
+Return -> sends a termination signal to compiler. In other words 'return' keyword stops execution of the code
+In void methods we can use 'return' keyword as-is, whithout adding any data type (since the method is not expected to return anything).
+In non void methods we HAVE to add an appopriate data type, the method is expected to return.
+Class is a blueprint for an object.
+Object is separate instance, every instance has its own set of attributes and behaviour, in other words instance variables belong to objects.
+Every object is getting its own set/copy of instance variables
+=============================Constructor============================
+Constructor is a block of code, that helps us to specify the rules of creating an object from a class.
+Constructor is the main component for us to be able to create an object.
+If we do not create a constructor in a class, java compiler will create one for us, it's called default constructor.
+Sytax of constructor:
+	accessModifier className(){
+	}
+Rules:
+	- constructor MUST have the same name as class.
+	- constructor CANNOT have return type
+Every class in Java has a constructor. 
+If we do not create a constructor, java compiler will create it for us, it's called default constructor.
+If we create a constructor, then java will not do create a default constructor.
+The constructor is called every time when we create an object of the class:	
+		when we use 'new' keyword.
+When we have 2 similar variable names(one instance variable, one parameters variable), then we should clarify to compiler where to use which of the variables.
+'this' keyword is used to specify that we are trying to refer to an instance variables:
+e.g.:
+		this.name
+		this.floor
+		this.address
+Looking into the classes instanciation, create the constructors:
+1. 
+MyClass myObj = new MyClass("Hello", 12, 34.4, 'o', true);
+public class MyClass {
+	public MyClass(String str, int num, double d, char c, boolean b){
+	}
+}
+2.
+YourClass obj = new YourClass(true, true, true, false, "false");
+public class YourClass {
+	public YourClass(boolean isTrue, boolean isItTrue, boolean sure, 
+	boolean areYouSure, String str){
+	}
+}
+3. 
+Our our = new Our("23", 34, "34.4", "true", false);
+	public class Our {
+		public Our(String s, int num, String str, String str2, boolean b){
+		}
+	}
+4.
+Your our = new Your();
+public class Your{
+	public Your(){
+	}
+}
+5. 
+YourCl you = new YourCl("", '');
+public class YourCl{
+	public YourCl(String str, char ch){
+	}
+}
+1. Create Building class with name, address, floors instance variables
+2. Create 3 arguments constructor, and printInfo() method
+3. Create an 2 objects of Building class
+
+
+
+
+1. 
+MyClass myObj = new MyClass("Hello", 12, 34.4, 'o', true);
+2.
+YourClass obj = new YourClass(true, true, true, false, "false");
+3. 
+Our our = new Our("23", 34, "34.4", "true", false);
+4.
+Your our = new Your();
+5. 
+YourCl you = new YourCl("", '');
+
+
+
+
+
+1. First create a method in instance class
+2.Give data types such as Sting, int, double, char, boolean and assign variable names.
+3.Create a constuctor.
+4.Use the same name as a class name.
+5.In constructor inside paranthesis give parameters using the same data types as above with the same variable names or different.
+6. If same variable names are used, use the keyword "this" to refer.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+int i=5; 
+
+sout(i>2 ? "Time" : true); --> it will work without an issue in this since I don't have any assignment 
+
+String result=i>2 ? "Time" : true; --> Since java does not know the result of the ternary operator until runtime 
+
+
+test.java
+
+javac test.java --> the code compiled source code to > byte code. It will generate another file which has an extention of .class
+
+test.class
+
+java test
+
+sourcecode > Byte code > Binary code
+
+NOTE: In if statement we can use only one if condition and one else condition. However, we can use more than one else if statement 
+
+if(x>5)
+	sout(); 
+else if(y>4)
+	sout(); 
+else if(y<10 && x<7)
+	sout(); 
+else
+	sout(); 
+
+
+====================================
+
+
+int x=4; 
+
+while(x<10){
+	
+	sout(); 
+
+	x++; 
+}
+
+===============
+
+for(int x=4;x<10; x++){
+	sout(); 
+
+}
+
+======================================
+
+int count =1; 
+
+  do{
+
+    count =1; 
+   System.out.println(count++); // 1
+
+  }while (count<=6);
+
+======================================
+
+int count =1; 
+
+while(count<=5){
+	sout(++count); 2, 3 , 4, 5, 6
+}
+
+======================================
+
+int count =1; 
+
+while(count<=5){
+	sout(count++); 1, 2 , 3, 4, 5
+}
+
+======================================
+ARRAY
+
+- It is collection, storage, box 
+- Inside the array we store the variables 
+- Array is fixed size
+- We need to define the array with their data type. 
+- We can store duplicate values inside array. 
+- Once you define your size of the array and do not store any value java will give the default values for your array elements. 
+- Array follows insertion order in java
+
+String s1="David"; 
+String s2="John"; 
+String s3="Kelly"; 
+String s4="Priyanka"; 
+String s5="Kushal";
+String s6="Ajeesh";
+String s7="Priyanka"; 
+
+
+10,4,3,7,22,45
+
+int [] ages=new int [6]; 
+
+ages[0]=10;
+ages[1]=4;
+ages[2]=3; 
+ages[3]=7; 
+ages[4]=22; 
+ages[5]=45; 
+
+
+NOTE: To be able to print the values from Array, we can use loop or there is one method called toString() which is coming from Arrays class.  
+
+Default Value for Java Variables
+- any number will get 0 (0.0) as a default value 
+- char will get empty String as default value 
+- Objects (String is one of the object) will get the default value as null.
+- boolean will get false as a default value in java. 
+
+===============================
+NOTE: To be able to get the length of the Array, we can use one property which is called "length"
+
+==============================
+
+1. implementation of Array: 
+
+int [] ages=new int [6]; 
+
+ages[0]=10;
+ages[1]=4;
+ages[2]=3; 
+ages[3]=7; 
+ages[4]=22; 
+ages[5]=45; 
+
+2. implementation of Array: 
+
+String [] names={"David", "John", "Sameer", "Pratik","Hunt"};
+names[6]="Hunt"; --> it will throw runtime exception
+
+byte [] number={5,2,6,7,3,122};  
+
+
+=============================================
+
+// Using scanner ask user to provide 7 byte values and store them inside the array. 
+
+Please enter 1 number: 
+4
+Please enter 2 number: 
+7
+..
+.
+.
+.
+Please enter 7 number: 
+19
+
+Print the array using toString() Method
+
+==================================
+
+TASK: 
+
+Create the long array with following values: 8, 234, 86,6543, 8375, 566,34,9
+
+Using loop find the largest value from given array. 
+
+
+1- create one long largestValue
+2- loop to your array
+3- if the element is bigger than the largestValue then assign the element to the largestValue otherwise do not change anything else
+================================================================
+HOMEWORK: 
+1- Create one String array and print the values from last element to first element
+2- Create one int array that size of 6, then find sum of the given elements
+
+Interview question; if ur num equals to some values in[] nums={7,3,6,2,9}
+How to sort this array without sort method.
+
+Int []nums={3,3,6,2,9};
+
+nums[0]=7;
+nums[1]=3;
+Int temp=0;
+
+if(nums[0]>nums[1]){
+   temp=num[0];
+   num[0]=num[1];
+   num[1]=temp;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

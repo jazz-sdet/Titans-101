@@ -1,0 +1,106 @@
+TASK: 
+
+Create one method that take StringBuilder as parameter and will find all the letters between D to G and print them. 
+
+GAMDKJDHO2UY658HFE7KN12BL39KGAE
+
+5ch
+
+=======================================
+Set
+* unique values
+* it is interface so we can not instantiate  the object using Set interface
+* We can store only object
+
+HashSet
+* it is class
+* there is no order
+* Unique
+* we can store only one null value
+
+add(); --> it will add the value inside the Set
+CONTAINS(Object name); --> If the set contains the provided object, it return true. 
+SIZE(); --> return int length of the set
+REMOVE(Object name); --> It will remove the given object from the set
+CLEAR(); --> it will clear all the elements from set
+ISEMPTY(); --> if the set is empty, it will return true. 
+
+TASK: 
+FLOWER
+Create one flower class with following PRIVATE instance variables "name" and "color"
+Create one constructor to initialize your instance variables
+Create getters and setters for instance variables
+Create one toString method to print variable information 
+FLOWERTEST
+Create one FlowerTest Class
+Create one HashSet collection to store 5 flower object. 
+Then print all names and colors of the flowers from hashSet. 
+
+LinkedHashSet
+* follows insertion order
+* we can store null values
+* only unique elements
+
+Set<String> names=new LinkedHashSet(); 
+LinkedHashSet<String> names=new LinkedHashSet<>(); 
+
+TreeSet 
+* It follows ascending order
+* Doest allow to store null value
+* It can use all the method which SET is implementing
+
+Set <Integer> numbers=new TreeSet<>(); 
+TreeSet<Integer> numbers=new TreeSet<>();
+
+NOTE: Left side of the object will decide which methods to call, right side of the object will decide which object will be created in Heap. 
+
+MAP
+* We can store the elements with key and value format
+* Map is an interface so we can not instantiate the object using Map. 
+* Map has 3 implementation like HashMap, LinkedHashMap, TreeMap
+* Inside map keys must be unique but values can be duplicate
+* Keys and values must be object. 
+
+KEY       VALUES
+(String)  (String)
+David --> Math
+Micheal --> Computer
+Brad --> Math
+Kushal --> SDET
+Priyanka --> Scrum Class
+Melissa --> null
+null --> null
+
+KEY      VALUES
+(String) (Integer) 
+Noah --  19
+James -- 33
+Lucas -- 29
+Benjamin --> 15
+
+	(KeyDT), (ValueDT)
+Map<String, Integer> ages=new HashMap<String,Integer>(); 
+Map<String, Integer> ages=new HashMap();
+HashMap<String,Integer> ages=new HashMap();
+HashMap(String, String) cities=new HashMap(); 
+
+put(key, value); --> it will store the element inside the map. 
+get(key); --> this method will return the value matching with your key
+remove(key) --> removes the element from map
+keySet() --> returns all the keys from map. Return type of this method is Set collection. 
+
+
+TASK: 
+EMPLOYEE: 
+Create one employee class with private names, city, height
+Create the contructor to initialize the instance variables
+Create toString method to print all the information of the employee object
+Create getters and setters for instance variables
+Create one static method to generate 8 digit Long employee number
+
+EMPLOYEETEST: 
+Create 4 employee object
+Create one Map to store the employees with their employee number. Key will be employeeNumber
+Print only the names of the Employees
+Print all the information of the employee
+Print all the keys of the map

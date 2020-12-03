@@ -1,0 +1,8 @@
+<suite>
+    <test>
+        <classes>
+            <class name="Project5Nov9.Page.Tests.HomeTest">
+            </class>
+        </classes>
+    </test>
+</suite>

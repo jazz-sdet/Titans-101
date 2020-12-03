@@ -1,0 +1,114 @@
+1- Java Comment 
+==> Single line comment (//)
+==> Multi Line comment (/* Text */)
+
+Class --> It is blueprint of our object. 
+
+Variable: It is a memory that we can store the data. 
+Variable Names: 
+1- Starting with lower case
+2- It can not start with number but can end with number
+3- We can use _ and $ everywhere in variable name but we can not use other symbols
+apple#= --> will give compile time error
+ What is compile time error? Why most of the time it happens? 
+ Compile time error will occur because of the syntax issue. 
+4- Inside the same class we can not use more than one time same variable name. 
+
+int davidAge=10;
+int adamAge=10; --> it will give compile time error. 
+
+5- It can not be java reserved keyword
+6- We can not use the space in variable name. 
+
+TASK: 
+In farm We have 23 cows and 42 chickens
+1- Print total number of animal in this farm
+2- Calculate total number of legs in this farm and print it
+4- One cow is $2000 and 1 chicken is $11 calculate total prices for all animals and print it. 
+
+* Create new class in Intellij named as Farms, create main method and implement the code for given task. 
+
+Primitive Data Type
+1- Primitive data types are not object because of that they don't have method. 
+2- In java we have 8 different data types. 
+
+
+0 or 1 is bit
+8 bit is 1 byte
+1024 byte is one KB
+1024 KB is one MegaByte
+1024 MB is 1GB
+1024 GB is 1TB
+1024 TB is 
+
+* Data Types for Integral Numbers: 
+1- byte - 8 bit -> 127 to -128
+2- short - 16 bit -> you can store the number between 32000 to - 32000
+3- int - 32 bit -> you can store the value up to 2billion
+4- long - 64 bit -> If the value for long number exceed int number limit(which is 2billion), we need to use "l" or "L" at the end of long value. 
+long number limit is 9223372036854775807
+
+long worth=150000000000l; 
+long worth1=150000000000L; 
+
+* Data Types for Decimal Numbers: 2.5, 5.278
+float - 32 bit --> If you want to store decimal number to the float you must use "f" or upper case "F", otherwise the java will give compile time error. 
+double - 64 bit - 
+
+* boolean - boolean accept only true and false values. 
+* char - we can store single letter inside char. For chars we need to use single quotation mark. Char can take the values up to 65000. 
+
+UnderScore between numbers: it makes our numbers more readable 
+1- Underscore must come between numbers
+Example one : 5_6_3_2_4_5
+Example second : 563_245
+2- You can not use underscore in the beginning or at the end of your number
+Example third : _563245_ --> compile time error
+3- You can not use it before or after decimal point
+Example forth : 5_._63245 --> compile time error
+
+
+Remainder(Modules)
+While finding the remainder if left side is less than right side of remainder operator, the remainder for this process will be left side.. 
+
+25%35= 25
+48%55==> 48
+7%9--> 7
+15%11--> 11+4--> remainder is 4 
+7%5 --> 5+2 --> remainder is 2
+28%8 --> 8+8+8+4=28 --> remainder is 4
+24/8 == 3
+
+Find sum of all digits for 1234
+int num=1234;  --> 
+4
+3
+2
+1
+
+num=1233; 
+
+int firstNum=num%10; --> 4
+
+int result=num/10; 123
+
+int secondNum=result%10; 3
+
+Reassingment for variables: 
+To be able reassign the values to the variable without using data type and only with variable name we can reassign the values. Once we try to use it, it will get all the time last assigned values. 
+
+
+NOTE: All the variables inside main method is called local variables. Before using the local variables, We need to initialize them. Giving the values is called initializing in java. 
+
+Declaring Multiple Variables:
+1- All variables which is declared on the same line must have same data type. 
+2- We need to separate with comma
+3- When you give the value one of them, it will not change the value for other variables.
+
+int a,b, c;
+
+int a,b, byte c; --> compile time error
+
+int a; int b; int c;
+
+int a,b,c=10; --> only c is initialized, a and b are declared. 

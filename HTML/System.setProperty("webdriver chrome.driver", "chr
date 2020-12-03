@@ -1,0 +1,41 @@
+System.setProperty("webdriver chrome.driver", "chromedriver");
+        WebDriver driver=new ChromeDriver();
+        driver.get("https://blazedemo.com/purchase.php");
+        WebElement name=driver.findElement(By.xpath("//input[@id=('inputName')]"));
+        name.sendKeys("David");
+        WebElement address=driver.findElement(By.xpath("//input[@name=('address')]"));
+        address.sendKeys("2000 E Devon Ave");
+
+        WebElement city=driver.findElement(By.id("city"));
+        city.sendKeys("Chicago");
+
+        WebElement state=driver.findElement(By.id("state"));
+        state.sendKeys("Illinois");
+
+        WebElement zipCode=driver.findElement(By.xpath("zipCode"));
+        zipCode.sendKeys("60606");
+
+        Select creditCardType=new Select(driver.findElement(By.id("cardType")));
+        creditCardType.selectByVisibleText("Visa");
+        creditCardType.selectByVisibleText("American Express");
+        creditCardType.selectByVisibleText("dinersclub");
+
+        WebElement ccNumber = driver.findElement(By.id("creditCardNumber"));
+        ccNumber.sendKeys("4566998734522988");
+
+        WebElement creditCardMonth=driver.findElement(By.id("creditCardMonth"));
+        creditCardMonth.sendKeys("09");
+
+        WebElement creditCardYear=driver.findElement(By.xpath("creditCardYear"));
+        creditCardYear.sendKeys("2024");
+
+        WebElement nameOnCard=driver.findElement(By.id("nameOnCard"));
+        nameOnCard.sendKeys("David Trump");
+        WebElement rememberMeButton=driver.findElement(By.id("rememberMe"));
+        rememberMeButton.submit();
+
+        WebElement purchaseButton=driver.findElement(By.xpath("//input[contains@type=('submit')]"));
+        purchaseButton.click();
+
+
+

@@ -1,0 +1,115 @@
+Method -> behaviour of the object
+1- Access modifier
+2- Return type (void, primitive, object)
+3- Method name 
+	* Method name can be anything
+	* you need to follow the camelcase
+	* We can not start method name with number but we can end with number
+	* We can use $ and _ in the method name. We can not use any other symbol in method name
+4- Parameter
+* methodname + Parameter is called method signature.
+5- block of code inside the method {}
+
+Class -> Blueprint of the object
+1- We need class keyword
+2- We need class name
+	* Class name should be upper
+Object -> Using the class we create our instance(object)
+	1- We need to use the class name
+	2- Reference name (anything)
+	3- new keyword
+	4- Use constructor and parameter for constructor to create the object. 
+
+Constructor
+Constructor is a special method that has no return type. Usually we use the contructor to initialize our instance variables and also using this contructor we can create the object. 
+	1- It must be have the same name as class name. 
+	2- Constructor has no return type
+
+	Default Constructor: 
+	* Every class has default constructor without any parameter
+	* If you create any contructor inside the class, default constructor will be gone.
+
+	public Human(String fName, String lName){
+	this.fName=fName; 
+	this.lName-lName; 
+	}
+
+Instance variables vs Local Variables
+
+Instance Variables: 
+1- Inside the class but outside of the any method 
+2- Instance variables get default value. 
+3- We can use them for our object
+
+Local variables: 
+1- Local variables is insdie the scope of code. 
+2- You need to initialize the local variables, they don't get default value.
+3- We can not access outside of the scope
+
+Method Overloading:
+1- Same name of the method but different parameter
+	void run(){ sout("10 Mile")}
+	void run(String startPoint){ sout("10 mile Running started from "+startPoint)}
+	void run(String startPoint, String endPoint){}
+	void run(String endPoint, int totalMil)
+	void run(int totalMil, String endPoint)
+	void run(int totalMil){	}
+	You can Overlaod the method in Three different WAYs: 
+	* your number of parameter can be different 
+	* data type of the parameter can be different 
+	* order of the parameter can be different as well
+2- Method overloading happens inside same class 
+3- Changing return type is not method overloading
+3- Changing access modifier is not method overloading
+public void run(){}
+private int run(){} --> compile time error since we have run method without any param 
+
+Static Polymorphism(SP): SP is related with method overloading. Java will decide which methods to call at compile time. This is called SP.
+
+ForEach
+- We can use foreach loop for java collections. Like array, arraylist, set etc. 
+- For each has no index number
+
+	String arr[]= new String[10];
+	
+	for(DataTypeOfCollection anyName : nameOfCollection){
+
+	}
+
+	for(String a : arr){
+		sout(a); 
+		// foreach loop will run 10 times and will print all the elements from String array. 
+	}
+
+- foreach loop will start from first index and goes until at the end of your collection. 
+- in foreach you can not start from last index
+- foreach you can not use the index number unless you are creating one count for indexing 
+- it has easy syntax that's why you can use everywhere if you do not need index number. 
+
+
+INTERVIEW QUESTIONS: 
+1- Difference between method and constructor? 
+2- Difference between class and object? 
+3- What is method overloading? 
+4- What is static polymorphism? 
+5- What is the difference between local variables and instance variables?
+
+NOTE: 
+1- We can call the method inside another method just giving the name and parameter of the method. We can do it without creating the object if both method are in the same class. 
+2- If you are calling the method inside another class, You should create the object or you need to create static method. 
+
+
+Static (Static variable, Static method, Static initializer, instance initializer block)
+
+
+Access modifier ()
+Collections
+(ArrayList
+Set(HashSet, LinkedHashSet, Treeset)
+Map(HashMap, LinkedHashMap, TreeMap)
+HashTable)
+Encapsulation,
+Abstraction 
+Inheritance
+Polymorhism
+Exception

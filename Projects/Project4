@@ -1,0 +1,95 @@
+
+
+        Scanner Inputs = new Scanner(System.in);
+        System.out.println("Available music genres are: Classical,Pop and Country." +
+                "please enter the music genre");
+        String MusicType = Inputs.next();
+        String Classical = "Classical";
+        int ClassicalMusicPrice = 2;
+        String Pop = "Pop";
+        int PopPrice = 4;
+        String Country = "Country";
+        int CountryPrice = 3;
+        String Classical1 = "Four Seasons";
+        String Classical2 = "Fur Elise";
+        String Classical3 = "Finlandia";
+        String Classical4 = "Vocalise";
+        String Classical5 = "The Planets";
+        String Pop1 = "Bad Guy";
+        String Pop2 = "Talk";
+        String Pop3 = "Please Me";
+        String Pop4 = "7 Ring";
+        String Pop5 = "Without Me";
+        String Country1 = "Mean To Be";
+        String Country2 = "Heaven";
+        String Country3 = "Simple";
+        String Country4 = "One Number Away";
+        String Country5 = "Get Along";
+
+        if (MusicType.equalsIgnoreCase(Classical)) {
+            System.out.println("Classical: Four Seasons, Fur Elise, Finlandia, Vocalise, The Planets.\n" +
+                    "Please pick one.");
+            Inputs = new Scanner(System.in);
+            String ClassicalN = Inputs.nextLine();
+            if (ClassicalN.equalsIgnoreCase(Classical1) || ClassicalN.equalsIgnoreCase(Classical2) || ClassicalN.equalsIgnoreCase(Classical3) || ClassicalN.equalsIgnoreCase(Classical4) ||
+                    ClassicalN.equalsIgnoreCase(Classical5)) {
+                System.out.println("Please, insert 2$.");
+                int Money = Inputs.nextInt();
+                if (Money > ClassicalMusicPrice) {
+                    int Change = Money - ClassicalMusicPrice;
+                    System.out.println("Your change is " + Change);
+                    System.out.println("Enjoy the Music");
+                } else if (Money == ClassicalMusicPrice) {
+                    System.out.println("Enjoy the Music");
+                } else if (Money < ClassicalMusicPrice) {
+                    System.out.println("Sorry, entered amount is not enough");
+                }
+
+                }
+            } else if (MusicType.equalsIgnoreCase(Pop)) {
+                System.out.println("Pop: Bad guy, Talk, Please Me, 7 Ring, Without Me.\n" +
+                        "Please, pick one.");
+                Inputs = new Scanner(System.in);
+                String PopName = Inputs.nextLine();
+                if (PopName.equalsIgnoreCase(Pop1) || PopName.equalsIgnoreCase(Pop2) || PopName.equalsIgnoreCase(Pop3) || PopName.equalsIgnoreCase(Pop4) || PopName.equalsIgnoreCase(Pop5)) {
+                    System.out.println("Please enter 4$ for the music");
+                    int Money = Inputs.nextInt();
+                    if (Money > PopPrice) {
+                        int Change = Money - PopPrice;
+                        System.out.println("Your change is " + Change);
+                        System.out.println("Enjoy the Music");
+                    } else if (Money == PopPrice) {
+                        System.out.println("Enjoy the Music");
+                    } else if (Money < PopPrice) {
+                        System.out.println("Sorry, entered amount is not enough.");
+                    }
+
+                }
+            } else if (MusicType.equalsIgnoreCase(Country)) {
+            System.out.println("Country: Meant To Be, Heaven, Simple, One Number Away, Get Along." +
+                    "Please, pick one");
+            Inputs = new Scanner(System.in);
+            String CountryName = Inputs.nextLine();
+            if (CountryName.equalsIgnoreCase(Country1) || CountryName.equalsIgnoreCase(Country2) || CountryName.equalsIgnoreCase(Country3)
+                    || CountryName.equalsIgnoreCase(Country4) || CountryName.equalsIgnoreCase(Country5)) {
+                System.out.println("Please enter 3$ for the music");
+                int Money = Inputs.nextInt();
+                if (Money > CountryPrice) {
+                    int Change = Money - CountryPrice;
+                    System.out.println("Your change is " + Change);
+                    System.out.println("Enjoy the Music");
+                } else if (Money == CountryPrice) {
+                    System.out.println("Enjoy the music");
+                } else if (Money < CountryPrice) {
+                    System.out.println("Sorry, entered amount is not enough");
+                }
+
+
+            } else {
+                System.out.println("Sorry, entered genre is unavailable.");
+
+            }
+
+        }
+    }
+}

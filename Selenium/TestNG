@@ -1,0 +1,119 @@
+Firefox Browser
+Geckodriver
+
+System.setProperty("webdriver.geckodriver.driver", "geckodriver"); 
+
+WebDriver driver=new FirefoxDriver(); 
+
+FirefoxDriver driver=new FirefoxDriver(); 
+
+===================================
+
+Maven
+
+We use maven to centralize our dependencies in framework. It will be helpful to manage the dependencies in framework under one file. 
+
+pom.xml --> POM = Project Object Model
+
+Dependencies: 
+1- Selenium
+2- WebDriverManager --> It help us to download the driver and manage the version of driver.
+3- TestNG --> We will be using the testng to create the project with testng annotation. We can do assertion and verification using testng. At the same time, testng has own report. 
+
+TESTNG
+
+Annotations: We can use this annotations to run our java code and organize our framework.  
+@Test
+@BeforeTest
+@AfterTest
+@BeforeClass
+@AfterClass
+@BeforeMethod
+@AfterMethod
+@BeforeSuite
+@AfterSuite
+@DataProvider
+@Parameter
+
+Assertion and Verification: 
+Assertion: If some validation is failing, it will throw exception right away and do not execute the next line. We use hard assertion in testng for assertion. 
+	Assert.assertEquals("excepted", "actual");
+	Assert.assertTrue(booleanCondition);  
+		Assert.assertTrue(10==10);
+		Assert.assertTrue("expected".equals("actual")); 
+
+		UI with API
+		API with DB
+		UI with BR 
+
+		Assert.asserFalse(booleanCondition);
+
+		HOME: Techtorial 
+		wrong username 
+		wrong password
+		Assert.assertFalse(driver.getTitle.equals("Home:Techtorial")); 
+
+Verification: You will first validate everything in your test cases and if some of the validation is failing, then you can throw the exception at the end after all validations are completed. We will be using soft assertion in testng to be able to verify the test execution. 
+
+=====================================================================
+
+ // It will download the chromeDriver for your automation.
+        // All dependencies will be downloaded inside .m2 file
+        // ~/.m2 and C://users//username//.m2
+        WebDriverManager.chromedriver().setup();
+        // WebDriverManager will check following file  for drivers --> ~/.cache/selenium
+        WebDriver driver=new ChromeDriver();
+
+====================================================================   
+
+If you are having nosuchelement exception: 
+  1- It might be openning new window
+  2- It might be inside the iframe
+  3- It might be javascript alert
+  4- Your page might be refreshed after you find the element
+  5- id, class, or name might be changing frequently
+  6- Locator might be wrong 
+
+================================================================
+
+<html> 
+
+	<body> 
+
+	<select>country </select> 
+	<select>first name 
+		<option>John</option>
+	</select> 
+	<select>age</select> 
+
+	</body>
+
+</html> 
+
+
+/html/body/select[2]/option  --> 3
+
+(//select)[2]  --> 3
+
+//select[.='name']
+//select[starts-with(text() , 'first')]
+
+==================================================================
+
+Select Class
+
+We use select class to handle the drop down box in selenium. 
+To be able to use the select class, the html tagname must be select tag. 
+
+1- First we need to find the select tag element and store as webelement
+2- We need to create the object from Select class. Select constructor takes one argument as webelement
+
+	Select dropDown=new Select(WebElement); 
+3- We have three methods to select the value from drop down box using select class
+	a- selectByValue(); 
+	b- selectByVisibleText(); 
+	c- selectByIndex(); 
+
+Interview Question: 
+1- How do you handle drop downbox in selenium? 
+2- How many different way you can select the value in dropdown box? 

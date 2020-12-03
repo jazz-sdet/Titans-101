@@ -1,0 +1,59 @@
+package Homerwork;
+
+import java.util.Scanner;
+
+public class SevenTaskSeven {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please,enter your username:");
+        String userName = input.nextLine();
+
+        System.out.println("Please,enter your password");
+        String password = input.nextLine();
+
+        String actualUserName="Techtorial";
+        String expectedPassport="tech2020";
+        
+        boolean isCorrectUserNameAndPassword=false;
+        int countOfLogIn=0;
+
+
+        do {
+            int chance=3;
+
+            if (userName.equals(actualUserName) && password.equals(expectedPassport)) {
+                System.out.println("You are logging in, please wait....");
+                isCorrectUserNameAndPassword=true;
+            } else {
+                while (countOfLogIn < 3) {
+                    System.out.println("You have "+ chance +" more chances to login.");
+                    --chance;
+                    System.out.println("User name or passport is wrong, please, try again. ");
+                    System.out.println("Please, provide your user name");
+                    actualUserName = input.next();
+                    System.out.println("Please, provide your passport");
+                    expectedPassport = input.next();
+                    ++countOfLogIn;
+                    if (actualUserName.equals(password) && expectedPassport.equals(userName)) {
+                        System.out.println("You are logging in, please wait....");
+                        isCorrectUserNameAndPassword=true;
+                        break;
+
+                    }
+                    if (countOfLogIn%3==0&&(!isCorrectUserNameAndPassword)) {
+                        System.out.println("Your account is on hold");
+
+                    }
+                }
+            }
+
+        }while (!isCorrectUserNameAndPassword);
+
+
+
+    }
+}
+
+
+

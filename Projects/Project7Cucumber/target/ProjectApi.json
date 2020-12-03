@@ -1,0 +1,59 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-01T02:37:40.134Z",
+        "line": 8,
+        "name": "Star wars films negative testing for get request",
+        "description": "",
+        "id": "api-status-code-testing;star-wars-films-negative-testing-for-get-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1236000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user will creates get request by using invalid path",
+            "match": {
+              "location": "stepDefs.Api_Films_Defs.user_will_creates_get_request_by_using_invalid_path()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will get status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefs.Api_Films_Defs.user_will_get_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@StarNegative"
+          }
+        ]
+      }
+    ],
+    "name": "API status code testing",
+    "description": "",
+    "id": "api-status-code-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api_films.feature",
+    "tags": []
+  }
+]

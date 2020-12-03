@@ -1,0 +1,85 @@
+TestNG
+
+1- @Test @Test
+2- @BeforeMethod - @AfterMethod
+3- @BeforeClass - @AfterClass
+4- @BeforeTest - @AfterTest
+5- @BeforeSuite - @AfterSuite
+
+-----------
+@Parameter --> Using Parameter annotation we can give the values from xml file. 
+@DataProvider --> Using DataProvider annotation we can provide multiple data to our test annotation
+
+-------------------------
+XML(Extensible Markup Language) Runner file
+NOTE: we will using testng runner class to be able to run multiple classes under different package in one click. Also, we will be attaching the report plugins for xml file that will generate the report after we finish running. 
+
+<suite> 
+	<test> 
+		<classes>
+			<class> 
+			<class> 
+			<class> 
+		</classes> 
+	</test> 	
+	<test> 
+		<classes>
+			<class>  
+		</classes> 
+	</test> 	
+</suite> 
+
+
+class
+test
+classes
+suite
+
+PARAMETER ANNOTATION
+We can provide the values from xml file. We need to use parameter annotation with Test annotation. 
+
+@Parameters("one") --> if you are providing only one parameter you can give without curly braces
+@Parameters({"one", "two"})
+
+We need to use parameter tag in xml file to run with parameter. name="one" attribute value must be same with your parameter tag value. 
+Value attribute takes the value which we want to give to the test annotation.  
+
+   <parameter name="firstName" value="David"></parameter>
+
+NOTE: Parameter annotation will not run the test annotation more than one time. 
+
+How to generate TestNG Html Report? 
+First we need to create xml runner file. 
+Under RUN tab we need to open the editConfiguration. Under edit configuration select the xml runner which you want to generate the report. Click Listeners then add emailablereporter and failedreporter for testng. Apply and close the configuration popup and run your xml file. Once you run xml file, it will generate one test-output package for your report. 
+
+
+Singleton Design Pattern
+We want to use same driver in my all framework. We need to create one driver class under utils package. Inside this driver class we should have private instance variable for driver and we need to have one private contructor. After that, we should create one public static method to initialize our driver. We need to initialize the driver if the driver is equals to null. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

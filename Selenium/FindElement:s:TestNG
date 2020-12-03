@@ -1,0 +1,59 @@
+Difference between findElement() and findElements()? 
+
+1- FindElement()
+	* returns single WebElement
+	* If you are not able to find the element using locator, it will throw NoSuchElementException
+	* If you have more than one matching element with given locator, findElement() method will return first matching element
+2- FindElements()
+	* returns List<WebElement>
+	* If you are not able to find the elements using given locator, it will return empty list. 
+	* FindElements() method will return all matching elements from html
+
+--------------------------------------------------
+Cross Browser Testing: to make sure the web application is working as expected in different browsers like chrome browser, firefox, safari, IE, Opera etc.
+
+Firefox is the browser to display the html for the users. 
+We can run our automation script in firefox using geckodriver
+
+TASK: navigate to the "https://the-internet.herokuapp.com/" and get the text for all the links on the page than validate they are displayed on UI in ascending order
+
+MAVEN: 
+- We use the maven to manage our dependencies. (Selenium, WebDriverManager, TestNG, Cucumber, Junit, Rest-Assured)
+- We use pom.xml file in maven project to store and control the version of dependencies. 
+- Using maven help us to centralize all dependencies under the framework
+
+POM.XML --> Project Object Model . Extensible Markup Language
+
+
+.m2 --> The jar files in our project will be stored inside the .m2 file. 
+
+MAC USERS
+Search Button then search ~/.m2
+
+Windows
+C://users//yourName//m2
+
+Maven Dependencies: 
+1- Selenium WebDriver --> we use it to automate web application 
+2- WebDriverManager --> WebDriverManager help us to download the drivers and modify the version of the drivers. 
+3- TestNG --> We will use testng annotations to organize our selenium framework and we will use it for assertion and verification. We can also generate the testng report.
+
+
+We will be using mvnrepository to download the dependencies. 
+
+TESTNG Test Annotation
+@Test --> is connected with the method and we will create one test annotation for every test case. 
+Inside the same class we can use multiple test annotation. Test annotations will run in ascending order according to method name
+
+@Test
+public void testB(){
+	
+
+}
+
+
+@Test
+public void testA(){
+	
+	
+}

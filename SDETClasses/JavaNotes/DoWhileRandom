@@ -1,0 +1,176 @@
+String str="dedt";  index=
+
+while(index<str.length()-2)
+str.charAt(index)=='d' && str.charAt(index+2)=='d'
+================================================
+* Do-while Loop
+* Random Class
+
+TASK: 
+Ask user to enter one number, then print the numbers starting from given value to 0
+
+Given Value: 7 
+
+Expected Output: 7, 6, 5, 4, 3, ... 0
+
+If the user enter negative value then print the digits given number to 0 
+
+-8
+-8, -7, -6 ...0
+
+============================
+7
+7,6,5,..0
+
+-7
+-7,-6,-5....
+
+--------------------------
+
+TASK: Using scanner ask user to enter String value and print this String letter in reverse order
+
+Given Input: techtorial
+Output: lairothcet
+
+Given Input: test
+Output: tset
+
+-----------------------------------------
+
+Using scanner ask user to input positive int value
+Then print the the * in following format
+int number=6; 
+number>0
+number--;
+*
+**
+***
+****
+*****
+******
+...
+..
+**********
+=====================
+camry.charAt(3)==; 
+
+"y"+"r"=yr
+====================
+int num=4567; --. 456
+int sum=0; 
+
+given any 4 digit positive value find sum of the digit without loop 
+
+sum+=num%10; --> 7
+num=num/10; --> 456%10===> 6
+sum+=num%10; --> 13
+num=num/10; --> 45
+sum=sum+num%10; 13+5=18
+num=num/10= 4
+sum=sum+num%10; 18+4=22
+num=num/10; 0 
+sum=sum+num%10; 22+0=22
+
+Using scanner ask user to enter any positive int number, then find the sum of all digits using while loop. 
+
+while(num>0){
+	
+	num=num/10; 
+}
+
+
+================================================
+DO-WHILE LOOP 
+int x=10; 
+int y=5; 
+
+while(y>x){
+	sout(x); 
+	sout(y); 
+	x--; 
+	y++; 
+}
+
+Do-while will run at least one time. Because in do-while loop, we execute the block of code then check the boolean condition. 
+
+do{
+
+	// block of code
+
+}while(boleanCondition); 
+
+=========================================
+Using scanner ask user to provide the String value then ask user to provide the char 
+
+after that find the total count of given char which is available in your String. 
+
+String str="computer input"
+
+char ch='u'
+
+OUTPUT = "Count of u is 2"
+
+char ch='t'
+
+OUTPUT = "Count of t is 2"
+
+char ch='c'
+
+OUTPUT = "Count of c is 1"
+
+input.next().charAt(0); --> how to input the char using scanner
+
+HOMEWORK: 
+
+Using Random get one random number between 0 to 100
+Then Ask user to guess the number
+If the user input is more than random number print 
+"It is larger than the random value"
+Otherwise print: 
+"It is less than the random value"
+Keep continue to ask the user until the input is equals to random number
+
+68---> Do not print in the beginning
+
+Random Number is generated. 
+Please enter your guess: 
+60
+"It is less than the random value"
+Please enter your guess: 
+80
+"It is larger than the random value"
+Please enter your guess: 
+65
+"It is less than the random value"
+Please enter your guess: 
+68
+You find the random number!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

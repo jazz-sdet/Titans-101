@@ -1,0 +1,58 @@
+Classes and Objects in Java
+1. Any code that you want to store in a file MUST have .java extention.
+2. The class name MUST be the same as the file name that we have that class in.
+3. PIC -> Package, Import, Class order in the class:
+		-> we can have at most ONE package declaration (0 or 1)
+		-> we can have 0 to unlimited imports in our class
+		-> we can ONLY have 1 "public class" in the our class
+4. We can ONLY have single "public class" in a java file.
+5. The class attributes/behaviours are:
+	- methods
+	- variables
+Variables:
+	- datatype
+	- variable name
+	- assign value
+long distance; 					=> declaring a variable
+long distance = 10000000; 		=> initializing a variable
+2 variable types:
+	- instance variable (declared/initialized on a class level)
+	- local variable (declared/initialized inside of a method)
+Local variables are only available inside of specific method(where the variable was declared)
+Variable naming:
+	1. Convention: variable starts with lower case, and follow camelCase if more than 1 word.
+	2. we cannot use java reserved keywords(public, static, main, private, String....)
+	3. no space allowed
+	4. we cannot start with numbers, characters.
+	5. we are allowed to use _ or $ to start our variable name with.
+	6. variable must be unique (variables are case sensitive).
+Variable rules:
+	1. Instance variables get some default values assigned in case we simply declare it
+	2. Local variables do NOT get default values assigned.
+Objects:
+	- objects are created in order to access instance variables
+	- objects are created using "new" keyword
+	- the syntax of creating object of class:	
+				ClassName reference/variable = new ClassName();
+ Using objects we can have access to a instance variables. 
+ Local variables are not accessable from ANYWHERE except the method where we define the local variable.
+Class is a blueprint for our objects.
+Every new object gets a separate set of attributes(variables).
+Every class has attributes and behaviour:
+	attributes are variables
+	behaviour is method
+Method - is a set of commands, that has it's own name, and can be called when needed.
+Method - is block of code which only runs when called.
+Rules:
+	1. Methods live inside of the class
+	2. Methods cannot be created inside of another method
+	3. Methods must have a name
+	4. Methods have a scope which we define using "{}"
+Method Name:
+	1. by convention better to start method name with lower case
+	2. if multiple words used for method name -> use camelCase
+	3. cannot method startign with numbers or special characters
+Method output:
+The call to the methods expect some result. The results can be:
+	- void 					-> I don't expect anything returned to me
+	- non-void return 		-> I expect something to be returned

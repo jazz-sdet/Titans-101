@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.27">
+<testcase classname="Login" name="Home page functions" time="0.118">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is on "https://demo.espocrm.com/?" web page......................undefined
+When user clicks login button...............................................skipped
+And user clicks on burger button............................................skipped
+Then user should see all the function names.................................skipped
+]]></failure>
+</testcase>
+</testsuite>

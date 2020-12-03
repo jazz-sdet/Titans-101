@@ -1,0 +1,90 @@
+Last login: Wed Dec  2 18:20:56 on ttys001
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % pwd   
+/Users/zhazgulkalimalieva
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % touch file   
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % ls
+Applications				Movies
+Desktop					Music
+Dir					Pictures
+Documents				Postman
+Downloads				Public
+GIF.gif					b6956a718e9c9a6577d968483ed9e0ce.jpg
+IdeaProjects				file
+Library					fileUploadFile
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % rm file
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % ls
+Applications				Movies
+Desktop					Music
+Dir					Pictures
+Documents				Postman
+Downloads				Public
+GIF.gif					b6956a718e9c9a6577d968483ed9e0ce.jpg
+IdeaProjects				fileUploadFile
+Library
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % ls
+Applications				Movies
+Desktop					Music
+Dir					Pictures
+Documents				Postman
+Downloads				Public
+GIF.gif					b6956a718e9c9a6577d968483ed9e0ce.jpg
+IdeaProjects				fileUploadFile
+Library
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % pwd
+/Users/zhazgulkalimalieva
+zhazgulkalimalieva@Zhazguls-MacBook-Pro ~ % vi file
+
+
+
+
+
+
+
+
+
+
+my first file in my framework
+
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+-- INSERT --

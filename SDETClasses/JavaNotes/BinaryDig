@@ -1,0 +1,178 @@
+
+Decimal Number
+0 1 2 3 4 5 6 7 8 9 
+
+675
+
+Computer works with binary digits. 
+
+1 and 0 
+
+Every digit is called bit. One bit is the smallest data in the computer. 
+
+1 is the 5 volt in computer. 
+0 is the 0 volt in computer. 
+
+To be able to work with number, letters, pictures etc we need to convert them decimal number to binary digits. 
+
+230
+We are trying to reach the 230 using below number. We need add them each other. 
+
+256 128 64 32 16 8 4 2 1 
+0    1  1  1  0  0 1 1 0
+
+128+64+32+4+2 =230
+
+159-128=31 --> Target value
+31-16=15-8=7-4=3-2=1
+
+256 128  64 32 16 8 4 2 1 
+ 0   1   0  0   1 1 1 1 1
+
+TASK: Convert 653 to Binary Digits
+653-512=141-128=13-8=5-4=1
+
+512 256 128  64 32 16 8 4 2 1 
+1    0   1    0 0   0 1 1 0 1
+
+145--> Target value to convert binary digits
+
+145-128=17 
+
+256 128  64 32 16 8 4 2 1 
+0    1   0   0  1 0 0 0 1
+
+A is equals to the 65
+
+256 128  64 32 16 8 4 2 1
+0    0    1  0  0 0 0 0 1
+
+Every color has rgb code. 
+R--> Red
+G--> Green
+B--> Blue
+
+========================================
+Programming Languages
+1- Java --> Backend Development 
+2- Pyhton --> Data Science
+3- C++
+4- C#
+5- Javascript --> UI Development 
+6- TypeScript
+7- Groovy
+8- Ruby
+
+
+-------------------------
+The target in here to order the number in ascending way
+
+300 230 270 140 310 190
+
+230 270 140 300 190 310
+
+230 140 270 190 300 310
+
+140 230 190 270 300 310
+
+140 190 230 270 300 310
+
+PsedoCode
+
+Compare the two values everytime with each other
+
+if the first value is bigger than the second value
+
+Then swipe the number 
+
+Follow this step until completing the order of the numbers
+
+====================================
+TASK:
+Write the Logic while you are finding the ascending order of the number? 
+
+300 230 270 140 310 190
+PsedoCode
+* Take a look at the all the values
+* Find the smallest value 
+140
+* Take a look at all the values again 
+* Find the second smallest value
+* Take a look at all the values again 
+* Findthe third smalles value 
+then follow this step until order is completed
+
+PsedoCode 
+* First needs to in the language of you are using
+* It should solve the problem
+* It should be the description of the solution 
+* It is mostly used for humans to describe their solution in ordered way. 
+
+MERGE SORTING
+300 230 270 140 310 190
+
+
+300 230 270   -----   140 310 190
+
+300 230 -- 270  ******  140 310 -- 190
+
+230 300 -- 270  ******  140 310 -- 190
+
+230 270 300     ******  140 190 310
+
+140 190 230 270 300 310
+
+PsedoCode For Merge Sorting
+* Divide the numbers to the group of two until you find the 2 number in each group 
+* Keep Comparing the group of values with each other until you order all the values in ascending order. 
+
+=========================================
+JDK ( Java Development Kit)
+We use the JDK to write the java code and run the jave code. 
+Inside JDK, we have JRE plus development tools
+
+JRE (Java Runtime Environment)
+We need JRE to run the java code. 
+Inside the JRE, we have JVM and libraries
+
+JVM (Java Virtual Machine)
+It convert the code line by line so the computer can understand the code. It has compiler inside. Abstract machine. It is not physically exist. 
+
+We have our source code(Java Code). We need to convert source code the byte code. After converting the byte code we need convert the code to the binary code so computer can execute the code.  
+
+We are converting Source code to byte code using java converters. After that using JVM we convert the code byte code to binary code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,271 @@
+August 8, 2020- Saturday
+
+NOTE: 
+* We need to cast explicility once we go decimal number to integral value and 
+Larger data type to smaller data type. 
+
+double -->  int 
+
+
+Creating the variable on the Same Line
+1- The variable should be same data type
+2- We need to separate them with comma
+3- We can initialize the primitive using = sign 
+int k, l;  --> creates two variable on the same line. 
+
+int k; int l; --> works without an issue
+
+int k, int l; --> compile time error
+
+short s1, s2, s3 = 5;
+
+sout(s3); --> 5
+
+sout(s2); --> give compile time error
+
+
+long L1 = 4, L2, L3 = 7;
+
+
+Numeric Promotions in Java
+1- if one of the data type is larger than other data type. Java will promote the result to the largest data type
+(you can apply first rule if both data type is integral or both is decimal number)
+Example: 
+int * int = int 
+int / long= long
+float + double = double 
+2- If one of the data type is decimal number, java will promote the result to the decimal number
+Example: 
+float - long= float
+double + int = double 
+3- Short and byte will be promoted to the int. 
+Example: 
+short + short= int
+byte * short = int 
+byte % byte = int 
+
+========================================================
+
+int k=2; 
+
+k++; 2
+3
+int l= 6 - 12;  -6
+
+k = 4x
+
+======================================================
+
+TRUTH TABLE
+
+AND --> In truth table if you are using the AND to be able to get the result "true" both side of AND should be true. 
+
+OR --> if one of the side is true retult will be true for OR. 
+
+VISA and TICKET
+
+true and false --> false
+false and true --> false
+false and false --> false
+true and true --> true 
+
+
+TOEFL(70) or GPA( more than 3) ---> enroll the college 
+true  or false --> true
+false or true  --> true
+false or false --> false
+true or true --> true 
+
+AND --> & , && 
+OR --> | , ||
+
+Once you use the double && or || symbol, in operator if you are able to get the result from first condition, second condition will not be executed. However, when you use the single & or | symbol, no matter what both side of logical operator will be executed. 
+
+true && false --> both side will be executed
+false && true --> since from first condition I know my result is going to be false, that's why second condition will not be executed
+false && false --> second condition will not be executed
+
+false || true --> since we don't know the result from first condition, both side of logical operator will be executed
+true || false --> only first condition will be executed
+true || true --> 
+true | false --> 
+
+=================
+int a=4; 
+int b= 3; 
+        
+boolean result = 4 > 3 | 2 < 5; 
+
+
+a= 2
+b= 5
+sout(a)--> 2
+sout(b)--> 5
+
+---------------
+int a=4; 
+int b= 3; 
+        
+boolean result = true || --a < ++b; 
+
+a= 3
+b= 4
+
+sout(a) --> 3
+sout(b) --> 4
+
+----------------
+int a=4; 
+int b= 3; 
+        
+boolean result = true || 2 < 5; --> true 
+
+
+a= 2
+b= 5
+sout(a)--> 2
+sout(b)--> 5
+
+========================
+Precedence in Different type of Operators
+1- Logical negation(!)
+2- Arithmatic Operators
+3- Relational(Comparison) Operators
+4- Logical Operators
+
+
+int B=7; 
+int C=9; 
+
+boolean result=false || false && false
+
+
+false or(||) false--> false 
+
+false and(&&) false --> false
+
+=======================
+
+ int k=4; 
+ int l=7; 
+
+ 			 4      6    4      4 			7     3
+boolean test=k++ + --l > --k || k-- <= 4 & ++l + k-- != 7; 
+
+boolean test=true || k-- <= 4 & ++l + k-- != 7; --> 
+
+what is the output of k and l at the end of this implementation? 
+
+k = 2
+l = 6
+
+
+====================== 
+
+int a= 8; 
+
+int b= 5; 
+
+              6       8 
+boolean test= ++b <= a++ & a-- + --b > 7 && ++a % b-- >= 9 | a++ > 6; 
+
+true & true && false | true
+NOTE: if you have more than one logical operators start comparing from at the end of your code. 
+
+what is the output of a and b at the end of this implementation? 
+a= 10
+b= 4
+
+
+==================================
+
+STRING 
+
+To be able to store  more than one letter, we use the string in java. 
+
+String is one of the object and variable in java. 
+
+Every primitive data type is a variable in java but primitive data type is not object.
+
+Difference between primitive and object
+IN java object have method but primitive data type has not any method. 
+
+To be able to create the object in java we need to use "new" keyword but String is special object you don't need to create with new keyword. 
+
+String example=""; 
+
+String name="Techtorial"; --> String pool 
+
+String name = new String("Techtorial"); --> heap but not in String pool 
+
+
+sout(1+5+"t"+"c"+3); "6tc3" --> once you add numeric value to the string, your result will be string. 
+
+
+sout("4"+1+5+"3"+"t"+"c"+3);
+"4153tc3"
+
+If the numeric value is before the string it will be added together, but if it is after the string it will not be added just concatenation for String values. 
+
+sout("t"+"c"+2+4);  --> "tc24" 
+
+
+char one='T'
+char two='E'
+char three='C'; 
+char four="H"; 
+
+sout(""+one+two+three+four); 
+TECH
+
+SCANNER CLASS: 
+Scanner helps us to enter the values from console. Scanner is one of the object in java to enter the values from console. 
+
+Once you see the new keyword, it means we created new object in java. 
+
+
+Scanner input=new Scanner(System.in); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

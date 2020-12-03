@@ -1,0 +1,102 @@
+OOP
+
+Any code that you want to store in a file must have .java extension.
+Class name must be the same as a file name.
+PIC- Package, Import, Class order in class.
+We can have at most One package decleration (0-1)
+We can have 0 to unlimitied imports in our class
+We can have only 1 "public class" in our class/java file.
+The class attributes/behaviors are: methods, variables. We should first define/declare our data type before giving variable name(meaninful name) 
+f.ex: long distance=10000 
+--> value is 10000, we initialized/assigned variable by giving a value.
+
+Curly braces define the scope.
+
+30 reserved keywords in java.
+
+so main is a method
+
+2 variable types:
+  -instance variable (declared/initialized on a class level)
+  -local variable (declared/initialized inside of a method)
+
+Local variables are only available inside of specific method(where the varibales was declared)
+
+Class level 
+Method level
+
+so just to clarify for myself inside of main method it is used to run the features that are need to be run in order to.
+
+Variables naming:
+Starts with lowercase and follow camelCase if more than 1 word
+No java reserved keywords can be used
+No space 
+Cannot start with numbers, characters
+Can us _ or $
+Variables are case sensetive
+
+Variables Rules:
+	- Instance Variables get default values assigned in case we can simply declare it
+	-Local variables will NOT get any default value if it is not assigned compared to Instance Variable.
+
+
+Objects:
+	-objects are created in order to access instance variable
+	-objects are created using "new" kyeword
+	- the syntax of creating object of class 
+	ClassName reference/variable=new ClassName()	
+	- Using objects we can have access to instance variables. 
+	-Local variable are not accessable outside of local variables only inside of local variables.
+
+	Class is a blueprint for our object.
+	Every new object gets a seperate set of attributes (variables).
+
+	Every class has attributes and behavior:
+		attributes are variables
+		behavior is method
+
+	Method - is a set of commands, that has its own name, and can be called when needed.
+	Method - is a block of code which only runs when called.
+	Method lives inside of the class
+	Method cannot be created inside another method.
+	Method must have a name.
+	Methods have a scope which we define using culry braces "{}"
+
+	Method OUTPUT:
+	The call to the method expects some result:
+	   -result can be --void-- I dont expect anythung returned to me
+	   -non-void return --> I expect smth to be returned
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

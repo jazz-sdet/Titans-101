@@ -1,0 +1,162 @@
+STRING
+String is an object. 
+Every primitive data type is variable but every variable is not primitive data type because objects are also variable. 
+NOTE: Primitive data type has no method to use but in objects, we have a method. 
+Java is not fully object oriented programming language since we have primitive data type. 
+
+String city="Chicago"; 
+String city1="Chicago"; 
+String is special object that does not require to use new keyword to create it. 
+Differences between creating the String object with new keyword and without new keyword is related with Java memory location. 
+
+String state=new String("Illinos"); 
+String state1=new String("Illinos");
+
+SCANNER 
+We use the scanner to input the data from console. 
+
+Scanner scanner=new Scanner(System.in); 
+
+nextByte()
+nextShort()
+nextInt()
+nextLong()
+nextFloat()
+nextDouble()
+nextBoolean()
+next().charAt(0) --> char
+next() --> String "United States" --> only first word --> United
+nextLine() --> String "United States" --> full value --> United States
+NOTE: Use next() method, if u only need one word. Otherwise, use the nextLine() method. 
+Before nextLine() method do not use any other scanner method like nextByte(), next(), nextShort() etc. 
+
+=====================================
+
+TASK: 
+Create the new class named "PersonalInfo" and Ask User to following information using scanner
+First name
+Last Name 
+City 
+DOB(String)
+Weight(double)
+Height(float)
+Age(short)
+
+Then print the information in following format
+First Name is David --> next()
+Last Name is Hunt
+City = Chicago
+DOB is 05/19/2000 - String
+Weight --> 198.7
+Height --> 5.9
+Age is 20
+
+=====================HOMEWORK========================
+
+   Scanner scanner=new Scanner(System.in);
+        System.out.println("Exam-1");
+        byte exam1=scanner.nextByte();
+        System.out.println("Exam-2");
+        byte exam2=scanner.nextByte();
+        System.out.println("Exam-3");
+        byte exam3=scanner.nextByte(); 
+        
+        // (76+34+98)/3
+        int averageScore=(exam1+exam2+exam3)/3;
+        
+        boolean canPass=averageScore>=75 || exam1 > 90 || exam2 > 90 || exam3 > 90;
+
+        System.out.println("Average Score: "+averageScore);
+        System.out.println("Can I pass the class? "+canPass);
+        // HOMEWORK: write explanation to test above code with different input data.
+
+=======================================================
+length() method:  It will return length of the String value as int data type. It will count every single char in String. Counting starts from one. 
+
+Indexing starts from 0 in java
+
+String city="Chicago"; --> length is equals to 7
+
+CHICAGO
+0123456 --> index number of last char is 6. Lenght is 7 
+
+charAt() method: this method takes one parameter as index number of char and returns matching char. We use charAt method to take single char from String. 
+
+city.charAt(4); --> a
+city.charAt(1); --> h
+   
+String projector="EPSON"; 
+
+projector.charAt(2); 
+projector.charAt(4);
+
+===========================================
+NOTE: When you provide the index number for charAt() method, it should be positive value and less than length of String. If the index number is bigger than length of the String or negative values, charAt() method throws StringIndexOutOfBoundException at runtime. 
+
+NOTE: To be able to get the last char from String, we need to use str.length()-1. It gives you index number of last char. 
+
+We have two types of exception
+1- Compile time exception -> it is mostly related with syntax issue in java
+2- Runtime exception  -> It will be throwing this runtime exception after running the code. Runtime exception mostly related with your code logic. 
+
+=========================================
+
+INDEXOF Method
+
+This method takes the String value and return the index number of given String
+
+String phone="Iphone 10"; 
+
+phone.indexOf("n"); --> return index number of n --> 
+
+Return type of indexOf() method is int. 
+
+========================================
+
+** String is immutable. Once you use the string methods your original value will not change, unless you reassign your string. 
+
+
+========================================
+
+String car="Toyota"; 
+
+car.length(); --> INT
+car.indexOf("t"); --> 4 --> INT
+car.charAt(car.indexOf("t")); ---> char
+car.toLowerCase() --> STRING
+car.toUpperCase() --> STRING
+
+sout(car); --> Toyota
+
+car=car.toUpperCase(); --> 
+
+sout(car); --> TOYOTA
+
+
+READ BOOK == 102 TO 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

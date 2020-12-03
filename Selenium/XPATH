@@ -1,0 +1,103 @@
+XPATH
+* --> refers every tag inside the DOM.
+. --> refers the text() in xpath find the exactly matching text. 
+last() --> if you have more than one matching element, the last() method in xpath will find the last element on the list.
+
+Relative Xpath:
+1- we use double slash for relative xpath
+2- It will search the given tag everywhere inside the html
+
+//b
+
+//tagname[@attributeName='attributeValue']
+
+Dynamic Elements
+1- contains() --> //tagName[contains(@attributeName, 'attValue')]
+//input[contains(@class, 'sub')] --> it will find all the input tags which has class attribute and value of attribute contains the 'sub;
+
+//button[contains( . , 'Next') ] --> It's enough the next contains the given value. 
+//button[.='Next Page'] --> it should be exactly same text
+2- start-with()
+
+
+Absolute Xpath: 
+1- We are using single slash /
+2- We need to follow parent-child order in html for absolute xpath 
+
+
+ATDD --> Acceptance Test Driven Development 
+
+
+Hi, 
+
+I created attached excel file for webelement. While creating the page use the given id for webelement. I will build my automation according to the given ids. 
+
+Thanks,
+
+===================================================================
+
+CSS Selector
+
+tagName[attributeName='value']
+
+Contains ===> tagName[attributeName*='Value']
+Starts-with ===> tagName[attibuteName^='Value']
+
+Difference Between CSS and Xpath
+1- Syntax between css and xpath is different
+2- CSS is faster than xpath
+3- Xpath has more method than CSS
+4- CSS can not handle the text() and index
+5- CSS can not go parent and child elements
+
+//html/div/table
+
+Difference Betwen FindElement() and FindElements()
+
+
+<GrandpaGranny>
+	<Emma>
+		<Ava>
+		</Ava>
+		<Charlotte>
+		</Charlotte>
+		<Ava>
+		</Ava>
+	</Emma>
+
+	<Olivia number='one'>
+		<Victoria>
+		</Victoria>
+		<Aria>
+		</Aria>
+		<Ava>
+		</Ava>
+		<Aria>
+		</Aria>
+		<Aria>
+		</Aria>
+	</Olivia>
+
+	//Olivia[@number='one']//Aria
+
+	<Olivia number='two'>
+		<Grace>
+		</Grace>
+		<Ava>
+		</Ava>
+	</Olivia>
+
+	<Sophia>
+		<Ava>
+		</Ava>
+		<Charlotte>
+		</Charlotte>
+		<Victoria>
+		</Victoria>
+		<Aria>
+		</Aria>
+	</Sophia>
+
+</GrandpaGranny>
+
+//Ava

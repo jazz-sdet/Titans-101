@@ -1,0 +1,73 @@
+Development Tool = Inspect
+
+Element == > we can see HTML code under Element tab
+
+Console == to check the error for page we can take a look at to the console on dev tool
+
+Network == it is for api call, img calls, javascript code calls
+
+Application == we can see the webpage cookies under application tab. 
+
+
+Front End Developer --> 
+Angular Framework (TypeScript, html )
+React Framework (JavaScript, html )
+
+Back End Developer --> 
+Spring Framework ( Java )
+
+Full Stack Developer
+==================================================
+SDET
+
+TestNG Framework 
+
+Cucumber Framework ( BDD - Behaivour Driven Development )
+
+===================================================
+
+Front End Testing --> Selenium WebDriver
+
+Api Testing --> Rest-Assured Library
+
+Mobile App Testing --> Appium 
+
+=============================================
+SELENIUM
+
+Selenium WebDriver 
+It is library to automate the web pages. 
+
+Selenium RC
+It requires starting and closing the server for testing. All html document will be stored in server to run the test cases. 
+
+Selenium IDE 
+Selenium IDE is the Firefox plugin where you can record your testing and you can play those recording in next time. 
+
+Selenium Grid
+We are using selenium grid to run the test cases at the same time in different or same server. 
+
+600 TC
+
+100 TC --> 1
+100 TC 1
+100 TC 1
+100 TC 1
+100 TC 1
+100 TC 1
+
+========================================
+
+Advantages Of Selenium 
+1- Free and open source()
+2- multiple programming language like Phyton, Java, C#, C++
+3- It works with different browser like Chrome, Firefox, Edge, Opera
+4- It has huge community
+
+Disadvantages of selenium 
+1- We can not automate the pictures
+2- We can not automate the captcha
+3- Learning curve is not easy. 
+4- They don't have any technical support 
+5- It has no reporting tool. We need to third party tools for reporting like (cucumber html report, testng report, extends report etc)
+
