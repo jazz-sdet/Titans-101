@@ -1,0 +1,725 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-14T21:34:39.704Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "Register a patient variant 3",
+        "description": "",
+        "id": "registration-desk-login;register-a-patient-variant-3;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2813000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is logged in to demo.openmrs as admin",
+            "match": {
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_is_logged_in_to_demo_openmrs_as_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user creates a new patient with following data: \"John\", \"Smith\", \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Smith\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Male\"",
+                  "offset": 65
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_creates_a_new_patient_with_following_data(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "with extra information: 10 , \"January\", 1990",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 24
+                },
+                {
+                  "val": "\"January\"",
+                  "offset": 29
+                },
+                {
+                  "val": "1990",
+                  "offset": 40
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_extra_information(java.lang.Integer,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "with address: \"1200 N Lasalle\", \"Chicago\", \"IL\", \"USA\", and \"60613\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200 N Lasalle\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"60613\"",
+                  "offset": 60
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_address_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "new patient has been registered with: \"John\", \"Smith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Smith\"",
+                  "offset": 46
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.new_patient_has_been_registered_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "address of new patient is \"1200 N Lasalle\", \"Chicago\", \"IL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200 N Lasalle\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 55
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.address_of_new_patient_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-14T21:34:42.645Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 72,
+        "name": "Register a patient variant 3",
+        "description": "",
+        "id": "registration-desk-login;register-a-patient-variant-3;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is logged in to demo.openmrs as admin",
+            "match": {
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_is_logged_in_to_demo_openmrs_as_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user creates a new patient with following data: \"Sam\", \"Fellon\", \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sam\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Fellon\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"Male\"",
+                  "offset": 65
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_creates_a_new_patient_with_following_data(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "with extra information: 17 , \"April\", 1988",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17",
+                  "offset": 24
+                },
+                {
+                  "val": "\"April\"",
+                  "offset": 29
+                },
+                {
+                  "val": "1988",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_extra_information(java.lang.Integer,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "with address: \"2400 N Clark\", \"Chicago\", \"IL\", \"USA\", and \"60614\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2400 N Clark\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"60614\"",
+                  "offset": 58
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_address_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "new patient has been registered with: \"Sam\", \"Fellon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sam\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Fellon\"",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.new_patient_has_been_registered_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "address of new patient is \"2400 N Clark\", \"Chicago\", \"IL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2400 N Clark\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 53
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.address_of_new_patient_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-14T21:34:42.778Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 73,
+        "name": "Register a patient variant 3",
+        "description": "",
+        "id": "registration-desk-login;register-a-patient-variant-3;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is logged in to demo.openmrs as admin",
+            "match": {
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_is_logged_in_to_demo_openmrs_as_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user creates a new patient with following data: \"John\", \"Smith\", \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Smith\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Male\"",
+                  "offset": 65
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_creates_a_new_patient_with_following_data(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "with extra information: 10 , \"January\", 1990",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 24
+                },
+                {
+                  "val": "\"January\"",
+                  "offset": 29
+                },
+                {
+                  "val": "1990",
+                  "offset": 40
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_extra_information(java.lang.Integer,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "with address: \"1200 N Lasalle\", \"Chicago\", \"IL\", \"USA\", and \"60613\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200 N Lasalle\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"60613\"",
+                  "offset": 60
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_address_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "new patient has been registered with: \"John\", \"Smith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Smith\"",
+                  "offset": 46
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.new_patient_has_been_registered_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "address of new patient is \"1200 N Lasalle\", \"Chicago\", \"IL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200 N Lasalle\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 55
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.address_of_new_patient_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-14T21:34:42.911Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "Register a patient variant 3",
+        "description": "",
+        "id": "registration-desk-login;register-a-patient-variant-3;;5",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber_class.StepDefs.Hooks.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is logged in to demo.openmrs as admin",
+            "match": {
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_is_logged_in_to_demo_openmrs_as_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user creates a new patient with following data: \"Sam\", \"Fellon\", \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sam\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Fellon\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"Male\"",
+                  "offset": 65
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.user_creates_a_new_patient_with_following_data(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "with extra information: 17 , \"April\", 1988",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17",
+                  "offset": 24
+                },
+                {
+                  "val": "\"April\"",
+                  "offset": 29
+                },
+                {
+                  "val": "1988",
+                  "offset": 38
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_extra_information(java.lang.Integer,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "with address: \"2400 N Clark\", \"Chicago\", \"IL\", \"USA\", and \"60614\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2400 N Clark\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"60614\"",
+                  "offset": 58
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.with_address_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "new patient has been registered with: \"Sam\", \"Fellon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sam\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Fellon\"",
+                  "offset": 45
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.new_patient_has_been_registered_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "address of new patient is \"2400 N Clark\", \"Chicago\", \"IL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2400 N Clark\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 53
+                }
+              ],
+              "location": "cucumber_class.StepDefs.RegistrationDeskLogin.address_of_new_patient_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline"
+          }
+        ]
+      }
+    ],
+    "name": "Registration desk login",
+    "description": "",
+    "id": "registration-desk-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginRegistration.feature",
+    "tags": []
+  }
+]
